@@ -6,7 +6,7 @@ import org.apache.http.message.BasicNameValuePair;
  * @author Vasiliki Gkatziaki
  */
 public class CompanyGroupQuery extends Query<CompanyGroupQuery> {
-    private CompanyGroupQuery() {
+    public CompanyGroupQuery() {
         super();
     }
 

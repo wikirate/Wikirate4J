@@ -7,7 +7,7 @@ import org.apache.http.message.BasicNameValuePair;
  */
 public class ResearchGroupQuery extends Query<ResearchGroupQuery> {
 
-    private ResearchGroupQuery() {
+    public ResearchGroupQuery() {
         super();
     }
 

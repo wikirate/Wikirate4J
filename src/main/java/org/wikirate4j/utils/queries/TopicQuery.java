@@ -8,7 +8,7 @@ import org.apache.http.message.BasicNameValuePair;
  */
 public class TopicQuery extends Query<TopicQuery> {
 
-    private TopicQuery() {
+    public TopicQuery() {
         super();
     }
 

@@ -9,7 +9,7 @@ import org.apache.http.message.BasicNameValuePair;
 public class ProjectQuery extends Query<ProjectQuery> {
 
 
-    private ProjectQuery() {
+    public ProjectQuery() {
         super();
     }
 

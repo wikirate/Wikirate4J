@@ -7,7 +7,7 @@ import org.apache.http.message.BasicNameValuePair;
  */
 public class DatasetQuery extends Query<DatasetQuery> {
 
-    private DatasetQuery() {
+    public DatasetQuery() {
         super();
     }
 
