@@ -418,7 +418,7 @@ public class WikirateCardFactory {
                 .updated_at(getContentOf("updated_at", json, String.class))
                 .created_at(getContentOf("created_at", json, String.class))
                 .requested_at(getContentOf("requested_at", json, String.class))
-                .content(json.get("content"))
+                .content(json.isNull("content") ? null : json.get("content"))
                 .rawJson(json)
 
                 .build();
