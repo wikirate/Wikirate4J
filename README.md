@@ -1,6 +1,6 @@
 # Wikirate4J
 
-Wikirate4j is a Java library for the [Wikirate API](https://wikirate.org/Use_the_API) licensed under GNU GPL v3.
+Wikirate4J is a Java library for the [Wikirate API](https://wikirate.org/Use_the_API) licensed under GNU GPL v3.
 
 [![wikirate](https://img.shields.io/twitter/follow/wikirate?style=social)](https://twitter.com/wikirate)
 
@@ -32,9 +32,11 @@ Maven
 ### Getting Started
 
 If you are new using Wikirate4J, this is the place to begin. The main goal of this short tutorial is to get you started
-with Wikirate4pJ. We will not go into too much detail here but we will present some basics.
+with Wikirate4J. We will not go into too much detail here but we will present some basics.
 
 #### Hello Wikirate4J
+
+Wikirate4J makes it trivial to interact with Wikirate4J API 
 
 ####
 
