@@ -1,0 +1,67 @@
+{
+  "id": 7217,
+  "name": "Adidas AG",
+  "type": {
+    "id": 651,
+    "name": "Company",
+    "type": "Cardtype",
+    "url": "https://wikirate.org/Company.json",
+    "codename": "wikirate_company"
+  },
+  "url": "https://wikirate.org/Adidas_AG.json",
+  "wikipedia": {
+    "id": 2725546,
+    "name": "Adidas AG+Wikipedia",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Adidas_AG+Wikipedia.json",
+    "content": "Adidas"
+  },
+  "open_corporates": {
+    "id": 5154688,
+    "name": "Adidas AG+OpenCorporates",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Adidas_AG+OpenCorporates.json",
+    "content": "D3304V_HRB3868"
+  },
+  "alias": {
+    "id": 57126,
+    "name": "Adidas AG+Alias",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Adidas_AG+Alias.json",
+    "content": [
+      "Adidas",
+      "Adidas AG",
+      "adidas-group",
+      "Adidas Sourcing Ltd."
+    ]
+  },
+  "headquarters": {
+    "id": 4719704,
+    "name": "Adidas AG+Headquarters",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Adidas_AG+Headquarters.json",
+    "content": [
+      "Germany"
+    ]
+  },
+  "oar_id": {
+    "id": null,
+    "name": "Adidas AG+OS ID",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Adidas_AG+OS_ID.json"
+  },
+  "sec_cik": {
+    "id": null,
+    "name": "Adidas AG+SEC CIK",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Adidas_AG+SEC_CIK.json"
+  },
+  "items": [],
+  "links": [],
+  "ancestors": [],
+  "html_url": "https://wikirate.org/Adidas_AG",
+  "created_at": "2014-03-15 13:14:13 UTC",
+  "updated_at": "2022-04-16 17:18:49 UTC",
+  "answers_url": "https://wikirate.org/Adidas_AG+Answer.json",
+  "requested_at": "2023-01-17 09:53:42 UTC"
+}

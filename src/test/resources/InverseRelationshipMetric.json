@@ -1,0 +1,149 @@
+{
+  "id": 2929015,
+  "name": "Commons+Supplier of",
+  "type": {
+    "id": 43576,
+    "name": "Metric",
+    "type": "Cardtype",
+    "url": "https://wikirate.org/Metric.json",
+    "codename": "metric"
+  },
+  "url": "https://wikirate.org/Commons+Supplier_of.json",
+  "codename": "commons_supplier_of",
+  "designer": "Commons",
+  "title": "Supplier of",
+  "question": {
+    "id": 3430734,
+    "name": "Commons+Supplier of+Questions",
+    "type": "PlainText",
+    "url": "https://wikirate.org/Commons+Supplier_of+Questions.json",
+    "content": "Which companies does this supplier supply to?"
+  },
+  "metric_type": {
+    "id": 2929016,
+    "name": "Commons+Supplier of+*metric type",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Commons+Supplier_of+*metric_type.json",
+    "content": "Inverse Relationship"
+  },
+  "about": {
+    "id": 7886350,
+    "name": "Commons+Supplier of+About",
+    "type": "RichText",
+    "url": "https://wikirate.org/Commons+Supplier_of+About.json",
+    "content": "<p style=\"font-size: 15.2px;\">When global supply chains are opaque, consumers lack meaningful information about where their products were made and under what conditions. Do they enable socially or environmentally irresponsible practices? Without supply chain transparency, there is just no way of knowing.</p>\r\n<p style=\"font-size: 15.2px;\">The first step in making supply chains more transparent is mapping the supplier relationships between companies. </p>"
+  },
+  "methodology": {
+    "id": 7886351,
+    "name": "Commons+Supplier of+methodology",
+    "type": "RichText",
+    "url": "https://wikirate.org/Commons+Supplier_of+methodology.json",
+    "content": "<p><span style=\"font-size: 15.2px;\">This data has been collected through semi-automated techniques. Where possible it has been scraped from supplier lists that were published by the companies.</span></p>"
+  },
+  "value_type": {
+    "id": 3430735,
+    "name": "Commons+Supplier of+value type",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Commons+Supplier_of+value_type.json",
+    "content": null
+  },
+  "value_options": {
+    "id": null,
+    "name": "Commons+Supplier of+value options",
+    "type": "List",
+    "url": "https://wikirate.org/Commons+Supplier_of+value_options.json"
+  },
+  "report_type": {
+    "id": null,
+    "name": "Commons+Supplier of+Report Type",
+    "type": "List",
+    "url": "https://wikirate.org/Commons+Supplier_of+Report_Type.json"
+  },
+  "research_policy": {
+    "id": 3430733,
+    "name": "Commons+Supplier of+Research Policy",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Commons+Supplier_of+Research_Policy.json",
+    "content": "Community Assessed"
+  },
+  "unit": {
+    "id": null,
+    "name": "Commons+Supplier of+unit",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Commons+Supplier_of+unit.json"
+  },
+  "range": {
+    "id": null,
+    "name": "Commons+Supplier of+Range",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Commons+Supplier_of+Range.json"
+  },
+  "hybrid": {
+    "id": null,
+    "name": "Commons+Supplier of+hybrid",
+    "type": "Toggle",
+    "url": "https://wikirate.org/Commons+Supplier_of+hybrid.json"
+  },
+  "topics": {
+    "id": 3430732,
+    "name": "Commons+Supplier of+Topic",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Commons+Supplier_of+Topic.json",
+    "content": [
+      "Suppliers",
+      "Supply Chain"
+    ]
+  },
+  "scores": {
+    "id": null,
+    "name": "Commons+Supplier of+Score",
+    "type": "Search",
+    "url": "https://wikirate.org/Commons+Supplier_of+Score.json"
+  },
+  "formula": {
+    "id": null,
+    "name": "Commons+Supplier of+Formula",
+    "type": "CoffeeScript",
+    "url": "https://wikirate.org/Commons+Supplier_of+Formula.json"
+  },
+  "rubric": {
+    "id": null,
+    "name": "Commons+Supplier of+Rubric",
+    "type": "JSON",
+    "url": "https://wikirate.org/Commons+Supplier_of+Rubric.json"
+  },
+  "variables": {
+    "id": null,
+    "name": "Commons+Supplier of+*variables",
+    "type": "JSON",
+    "url": "https://wikirate.org/Commons+Supplier_of+*variables.json"
+  },
+  "answers": 90185,
+  "bookmarkers": 3,
+  "datasets": 4,
+  "companies": 53734,
+  "calculations": [
+    "https://wikirate.org/Commons+Industry.json"
+  ],
+  "answers_url": "https://wikirate.org/Commons+Supplier_of+Answer.json",
+  "items": [],
+  "links": [],
+  "ancestors": [
+    {
+      "id": 3411173,
+      "name": "Commons",
+      "type": "Research Group",
+      "url": "https://wikirate.org/Commons.json"
+    },
+    {
+      "id": 2929014,
+      "name": "Supplier of",
+      "type": "Metric Title",
+      "url": "https://wikirate.org/Supplier_of.json"
+    }
+  ],
+  "html_url": "https://wikirate.org/Commons+Supplier_of",
+  "created_at": "2017-07-09 22:47:20 UTC",
+  "updated_at": "2022-03-02 18:14:40 UTC",
+  "requested_at": "2023-01-17 11:30:54 UTC"
+}

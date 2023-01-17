@@ -1,0 +1,158 @@
+{
+  "id": 4577388,
+  "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen",
+  "type": {
+    "id": 43576,
+    "name": "Metric",
+    "type": "Cardtype",
+    "url": "https://wikirate.org/Metric.json",
+    "codename": "metric"
+  },
+  "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen.json",
+  "designer": "Global Reporting Initiative",
+  "title": "Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)",
+  "question": {
+    "id": 4577390,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+Questions",
+    "type": "PlainText",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+Questions.json",
+    "content": "Did the company disclose how much Surface Water it withdrew (in cubic metres)?"
+  },
+  "metric_type": {
+    "id": 4577389,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+*metric type",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+*metric_type.json",
+    "content": "Score"
+  },
+  "about": {
+    "id": null,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+About",
+    "type": "RichText",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+About.json?card%5Bname%5D=Global+Reporting+Initiative%2BSurface+water+withdrawals%2C+GRI+303-3-a+%28formerly+G4-EN8-a%29%2BLaureen+van+Breen%2BAbout"
+  },
+  "methodology": {
+    "id": null,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+methodology",
+    "type": "RichText",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+methodology.json?card%5Bname%5D=Global+Reporting+Initiative%2BSurface+water+withdrawals%2C+GRI+303-3-a+%28formerly+G4-EN8-a%29%2BLaureen+van+Breen%2Bmethodology"
+  },
+  "value_type": {
+    "id": null,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+value type",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+value_type.json?card%5Bname%5D=Global+Reporting+Initiative%2BSurface+water+withdrawals%2C+GRI+303-3-a+%28formerly+G4-EN8-a%29%2BLaureen+van+Breen%2Bvalue+type"
+  },
+  "value_options": {
+    "id": null,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+value options",
+    "type": "List",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+value_options.json?card%5Bname%5D=Global+Reporting+Initiative%2BSurface+water+withdrawals%2C+GRI+303-3-a+%28formerly+G4-EN8-a%29%2BLaureen+van+Breen%2Bvalue+options"
+  },
+  "report_type": {
+    "id": null,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+Report Type",
+    "type": "List",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+Report_Type.json?card%5Bname%5D=Global+Reporting+Initiative%2BSurface+water+withdrawals%2C+GRI+303-3-a+%28formerly+G4-EN8-a%29%2BLaureen+van+Breen%2BReport+Type"
+  },
+  "research_policy": {
+    "id": null,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+Research Policy",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+Research_Policy.json?card%5Bname%5D=Global+Reporting+Initiative%2BSurface+water+withdrawals%2C+GRI+303-3-a+%28formerly+G4-EN8-a%29%2BLaureen+van+Breen%2BResearch+Policy"
+  },
+  "unit": {
+    "id": null,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+unit",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+unit.json?card%5Bname%5D=Global+Reporting+Initiative%2BSurface+water+withdrawals%2C+GRI+303-3-a+%28formerly+G4-EN8-a%29%2BLaureen+van+Breen%2Bunit"
+  },
+  "range": {
+    "id": null,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+Range",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+Range.json?card%5Bname%5D=Global+Reporting+Initiative%2BSurface+water+withdrawals%2C+GRI+303-3-a+%28formerly+G4-EN8-a%29%2BLaureen+van+Breen%2BRange"
+  },
+  "hybrid": {
+    "id": null,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+hybrid",
+    "type": "Toggle",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+hybrid.json?card%5Bname%5D=Global+Reporting+Initiative%2BSurface+water+withdrawals%2C+GRI+303-3-a+%28formerly+G4-EN8-a%29%2BLaureen+van+Breen%2Bhybrid"
+  },
+  "topics": {
+    "id": 4577391,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+Topic",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+Topic.json",
+    "content": [
+      "Environmental Reporting",
+      "Transparency"
+    ]
+  },
+  "scores": {
+    "id": null,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+Score",
+    "type": "Search",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+Score.json"
+  },
+  "formula": {
+    "id": 4577392,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+Formula",
+    "type": "CoffeeScript",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+Formula.json",
+    "content": "{\"Unknown\": \"0\", \"else\": \"10\" }"
+  },
+  "rubric": {
+    "id": null,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+Rubric",
+    "type": "JSON",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+Rubric.json?card%5Bname%5D=Global+Reporting+Initiative%2BSurface+water+withdrawals%2C+GRI+303-3-a+%28formerly+G4-EN8-a%29%2BLaureen+van+Breen%2BRubric"
+  },
+  "variables": {
+    "id": null,
+    "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen+*variables",
+    "type": "JSON",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+*variables.json?card%5Bname%5D=Global+Reporting+Initiative%2BSurface+water+withdrawals%2C+GRI+303-3-a+%28formerly+G4-EN8-a%29%2BLaureen+van+Breen%2B%2Avariables"
+  },
+  "answers": 1790,
+  "bookmarkers": 1,
+  "datasets": 0,
+  "companies": 710,
+  "calculations": [
+    "https://wikirate.org/Oxfam_India+Environmental_Score.json",
+    "https://wikirate.org/Oxfam_India+Environmental_Disclosure_Score.json"
+  ],
+  "answers_url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+Answer.json",
+  "items": [],
+  "links": [],
+  "ancestors": [
+    {
+      "id": 801162,
+      "name": "Global Reporting Initiative",
+      "type": "Company",
+      "url": "https://wikirate.org/Global_Reporting_Initiative.json"
+    },
+    {
+      "id": 5663045,
+      "name": "Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)",
+      "type": "Metric Title",
+      "url": "https://wikirate.org/Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a.json"
+    },
+    {
+      "id": 836642,
+      "name": "Laureen van Breen",
+      "type": "User",
+      "url": "https://wikirate.org/Laureen_van_Breen.json"
+    },
+    {
+      "id": 2313632,
+      "name": "Global Reporting Initiative+Surface water withdrawals, GRI 303-3-a (formerly G4-EN8-a)",
+      "type": "Metric",
+      "url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a.json"
+    }
+  ],
+  "html_url": "https://wikirate.org/Global_Reporting_Initiative+Surface_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen",
+  "created_at": "2018-12-12 15:29:06 UTC",
+  "updated_at": "2022-03-01 19:42:47 UTC",
+  "requested_at": "2023-01-17 11:55:22 UTC"
+}

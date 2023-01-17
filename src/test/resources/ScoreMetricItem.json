@@ -1,0 +1,40 @@
+{
+  "id": 4576573,
+  "name": "Global Reporting Initiative+Third-party water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen",
+  "type": "Metric",
+  "url": "https://wikirate.org/Global_Reporting_Initiative+Third_party_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen.json",
+  "designer": "Global Reporting Initiative",
+  "title": "Third-party water withdrawals, GRI 303-3-a (formerly G4-EN8-a)",
+  "question": "Did the company disclose how much water it used (in cubic metres) from municipal (public) sources?",
+  "metric_type": "Score",
+  "about": null,
+  "methodology": null,
+  "value_type": null,
+  "value_options": [
+
+  ],
+  "report_type": null,
+  "research_policy": "Community Assessed",
+  "unit": null,
+  "range": null,
+  "hybrid": "no",
+  "topics": [
+    "Environmental Reporting",
+    "Transparency"
+  ],
+  "scores": [
+
+  ],
+  "formula": "(function() {\n  if (isKnown(answer)) {\n    10;\n  } else {\n    0;\n  }\n\n}).call(this);\n",
+  "rubric": null,
+  "variables": "",
+  "answers": 2065,
+  "bookmarkers": 2,
+  "datasets": 0,
+  "companies": 867,
+  "calculations": [
+    "https://wikirate.org/Oxfam_India+Environmental_Score.json",
+    "https://wikirate.org/Oxfam_India+Environmental_Disclosure_Score.json"
+  ],
+  "answers_url": "https://wikirate.org/Global_Reporting_Initiative+Third_party_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+Answer.json"
+}

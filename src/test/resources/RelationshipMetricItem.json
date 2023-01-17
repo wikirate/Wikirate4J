@@ -1,0 +1,39 @@
+{
+  "id": 3206217,
+  "name": "OpenCorporates+Has Brands",
+  "type": "Metric",
+  "url": "https://wikirate.org/OpenCorporates+Has_Brands.json",
+  "codename": "oc_has_brands",
+  "designer": "OpenCorporates",
+  "title": "Has Brands",
+  "question": "What brands does this company own?",
+  "metric_type": "Relationship",
+  "about": "<p>Brands are the customer facing version of companies. Sometimes a company will have several brands and might implement different principles and values that guide their operational decisions for each brand. As such it is helpful to understand how a company may operate differently depending on which customer group they are trying to serve.</p>",
+  "methodology": null,
+  "value_type": "Number",
+  "value_options": [
+
+  ],
+  "report_type": "Company Website",
+  "research_policy": "Community Assessed",
+  "unit": null,
+  "range": null,
+  "hybrid": "no",
+  "topics": [
+    "Marketing and communication"
+  ],
+  "scores": [
+
+  ],
+  "formula": "(function() {\n\n\n}).call(this);\n",
+  "rubric": null,
+  "variables": "",
+  "answers": 0,
+  "bookmarkers": 1,
+  "datasets": 1,
+  "companies": 0,
+  "calculations": [
+
+  ],
+  "answers_url": "https://wikirate.org/OpenCorporates+Has_Brands+Answer.json"
+}

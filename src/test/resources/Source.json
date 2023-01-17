@@ -1,0 +1,97 @@
+{
+  "id": 14411833,
+  "name": "Source-000176876",
+  "type": {
+    "id": 629,
+    "name": "Source",
+    "type": "Cardtype",
+    "url": "https://wikirate.org/Source.json",
+    "codename": "source"
+  },
+  "url": "https://wikirate.org/Source_000176876.json",
+  "file": {
+    "id": 14411834,
+    "name": "Source-000176876+File",
+    "type": "File",
+    "url": "https://wikirate.org/Source_000176876+File.json",
+    "content": "https://dq06ugkuram52.cloudfront.net/files/14411834/37526510.pdf"
+  },
+  "link": {
+    "id": 14411839,
+    "name": "Source-000176876+Link",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Source_000176876+Link.json",
+    "content": "https://sustainability.dominionenergy.com/assets/pdf/Metrics-Social%20Workforce.pdf"
+  },
+  "report_type": {
+    "id": 14411836,
+    "name": "Source-000176876+Report Type",
+    "type": "List",
+    "url": "https://wikirate.org/Source_000176876+Report_Type.json",
+    "content": [
+      "Corporate Social Responsibility Report",
+      "Sustainability Report",
+      "Aggregate Data Report"
+    ]
+  },
+  "title": {
+    "id": 14411835,
+    "name": "Source-000176876+Title",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Source_000176876+Title.json",
+    "content": "Social and Workforce Metrics"
+  },
+  "year": {
+    "id": 14411838,
+    "name": "Source-000176876+Year",
+    "type": "List",
+    "url": "https://wikirate.org/Source_000176876+Year.json",
+    "content": [
+      "2021"
+    ]
+  },
+  "items": [],
+  "links": [],
+  "ancestors": [],
+  "html_url": "https://wikirate.org/Source_000176876",
+  "created_at": "2022-12-22 01:41:40 UTC",
+  "updated_at": "2022-12-22 01:41:40 UTC",
+  "description": {
+    "id": null,
+    "name": "Source-000176876+description",
+    "type": "RichText",
+    "url": "https://wikirate.org/Source_000176876+description.json?card%5Bname%5D=Source-000176876%2Bdescription"
+  },
+  "discussion": {
+    "id": null,
+    "name": "Source-000176876+Discussion",
+    "type": "RichText",
+    "url": "https://wikirate.org/Source_000176876+Discussion.json?card%5Bname%5D=Source-000176876%2BDiscussion"
+  },
+  "company": {
+    "id": 14411837,
+    "name": "Source-000176876+Company",
+    "type": "List",
+    "url": "https://wikirate.org/Source_000176876+Company.json",
+    "content": [
+      "Dominion Energy"
+    ]
+  },
+  "metric": {
+    "id": null,
+    "name": "Source-000176876+Metric",
+    "type": "List",
+    "url": "https://wikirate.org/Source_000176876+Metric.json",
+    "content": [
+      "Global Reporting Initiative+Employees, GRI 102-8-a (formerly G4-10-a)",
+      "Global Reporting Initiative+Female employees, GRI 102-8-a (formerly G4-10-a)"
+    ]
+  },
+  "answer": {
+    "id": null,
+    "name": "Source-000176876+Answer",
+    "type": "Search",
+    "url": "https://wikirate.org/Source_000176876+Answer.json"
+  },
+  "requested_at": "2023-01-17 12:34:56 UTC"
+}

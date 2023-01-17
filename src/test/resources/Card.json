@@ -1,0 +1,34 @@
+{
+  "id": 7301440,
+  "name": "Nike Inc.+OS ID",
+  "type": {
+    "id": 52,
+    "name": "Phrase",
+    "type": "Cardtype",
+    "url": "https://wikirate.org/Phrase.json",
+    "codename": "phrase"
+  },
+  "url": "https://wikirate.org/Nike_Inc+os_id.json",
+  "content": "US2020349PNHW2P",
+  "items": [],
+  "links": [],
+  "ancestors": [
+    {
+      "id": 5800,
+      "name": "Nike Inc.",
+      "type": "Company",
+      "url": "https://wikirate.org/Nike_Inc.json"
+    },
+    {
+      "id": 6120068,
+      "name": "OS ID",
+      "type": "Metric Title",
+      "url": "https://wikirate.org/OS_ID.json",
+      "codename": "oar_id"
+    }
+  ],
+  "html_url": "https://wikirate.org/Nike_Inc+OS_ID",
+  "created_at": "2021-04-17 22:35:07 UTC",
+  "updated_at": "2021-04-17 22:35:07 UTC",
+  "requested_at": "2023-01-17 14:03:19 UTC"
+}

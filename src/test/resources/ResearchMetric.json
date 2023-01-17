@@ -1,0 +1,175 @@
+{
+  "id": 836952,
+  "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)",
+  "type": {
+    "id": 43576,
+    "name": "Metric",
+    "type": "Cardtype",
+    "url": "https://wikirate.org/Metric.json",
+    "codename": "metric"
+  },
+  "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a.json",
+  "designer": "Global Reporting Initiative",
+  "title": "Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)",
+  "question": {
+    "id": 837009,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+Questions",
+    "type": "PlainText",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+Questions.json",
+    "content": "What is the total amount of fuel consumption from non-renewable sources (in gigajoules) that the organization is responsible for?"
+  },
+  "metric_type": {
+    "id": 839761,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+*metric type",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+*metric_type.json",
+    "content": "Researched"
+  },
+  "about": {
+    "id": 837038,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+About",
+    "type": "RichText",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+About.json",
+    "content": "<p style=\"font-size: 15.2px;\">This metric is based on the Global Reporting Initiative (GRI) Standard Guidelines. </p>\r\n<p style=\"font-size: 15.2px;\"><a href=\"/Source_000090311\" target=\"_blank\">GRI 302</a> addresses the topic of energy. An organization can consume energy in various forms, such as fuel, electricity, heating, cooling or steam. Energy can be self-generated or purchased from external sources and it can come from renewable sources (such as wind, hydro or solar) or from non-renewable sources (such as coal, petroleum or natural gas).</p>\r\n<p style=\"font-size: 15.2px;\">Using energy more efficiently and opting for renewable energy sources is essential for combating climate change and for lowering an organization’s overall environmental footprint. The disclosures in this Standard can provide information about an organization’s impacts related to energy, and how it manages them.</p>\r\n<p><strong>Non-renewable energy source</strong> - energy source that cannot be replenished, reproduced, grown or generated in a short time period through ecological cycles or agricultural processes. Non-renewable energy sources can include:</p>\r\n<ul>\r\n<li>fuel distilled from petroleum or crude oil, such as gasoline, diesel fuel, jet fuel, and heating oil;</li>\r\n<li>natural gas, such as compressed natural gas (CNG), and liquefied natural gas (LNG);</li>\r\n<li>fuels extracted from natural gas processing and petroleum refining, such as butane, propane, and liquefied petroleum gas (LPG);</li>\r\n<li>coal;</li>\r\n<li>nuclear power</li>\r\n</ul>\r\n<p><span style=\"font-size: 15.2px;\">In 2018, the GRI G4 Sustainability Reporting Guidelines were superseded by the GRI Sustainability Reporting Standards (GRI standards). For this metric, the code </span><span style=\"font-weight: bolder;\">G4-EN3 is used in company reporting prior to 2018</span><span style=\"font-size: 15.2px;\">, and the </span><span style=\"font-weight: bolder;\">new GRI 302-1 code used in reporting from 2018 onwards</span><span style=\"font-size: 15.2px;\">. The methodology for the former G4 standard for this metric can be found </span><a href=\"/Fuel_consumption_from_non_renewable_sources_G4_EN3_a_Methodology\" target=\"_blank\" style=\"background-color: #ffffff; font-size: 15.2px;\">here</a><span style=\"font-size: 15.2px;\">. </span></p>"
+  },
+  "methodology": {
+    "id": 837080,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+methodology",
+    "type": "RichText",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+methodology.json",
+    "content": "<p style=\"font-size: 15.2px;\">For this metric question you are being asked to identify the total non-renewable fuel consumption of an the organization for a specific year. Start by searching publicly available documents like Annual and CSR reports. </p>\r\n<p style=\"font-size: 15.2px;\"><span style=\"font-weight: bolder;\">Keywords and search terms for this metric</span></p>\r\n<p style=\"font-size: 15.2px;\">- Energy</p>\r\n<p style=\"font-size: 15.2px;\">- Fuel</p>\r\n<p style=\"font-size: 15.2px;\">- Renewable</p>\r\n<p style=\"font-size: 15.2px;\">- 302-1</p>\r\n<p style=\"font-size: 15.2px;\">- GRI</p>\r\n<p style=\"font-size: 15.2px;\">- GRI Index</p>\r\n<p style=\"font-size: 15.2px;\"><span style=\"font-weight: bolder;\">Answers &amp; Calculations</span></p>\r\n<p style=\"font-size: 15.2px;\">Once you have found the answer, make sure the unit of measurement fits to the question on WikiRate. If it does not, convert or calculate the answer and document your approach in the Comments field below. Select the 'Unknown' answer box if the company has not published the data.</p>\r\n<p style=\"font-size: 15.2px;\">Always include the page number where you found the answer in the Comments field below. </p>\r\n<p style=\"font-size: 15.2px;\"><span style=\"font-weight: bolder;\">Units</span></p>\r\n<p>Companies may report fuel consumption in hundreds, thousands or millions of gigajoules or joules. <strong>The answer for this metric must be entered into WikiRate in gigajoules (GJ)</strong>. Make sure you check the unit of measurement and do any conversions necessary. Enter the full number into the answer field.</p>\r\n<p>E.g. If the company reports its non-renewable fuel consumption as '5 million megajoules (MJ)' the answer should be converted to gigajoules (GJ) and entered on WikiRate as '5000 GJ'</p>"
+  },
+  "value_type": {
+    "id": 849570,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+value type",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+value_type.json",
+    "content": "Number"
+  },
+  "value_options": {
+    "id": 849572,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+value options",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+value_options.json",
+    "content": [
+      "Unknown"
+    ]
+  },
+  "report_type": {
+    "id": 844794,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+Report Type",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+Report_Type.json",
+    "content": "Corporate Social Responsibility Report"
+  },
+  "research_policy": {
+    "id": 836954,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+Research Policy",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+Research_Policy.json",
+    "content": "Community Assessed"
+  },
+  "unit": {
+    "id": 849571,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+unit",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+unit.json",
+    "content": "Gigajoules"
+  },
+  "range": {
+    "id": null,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+Range",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+Range.json?card%5Bname%5D=Global+Reporting+Initiative%2BFuel+consumption+from+non-renewable+sources%2C+GRI+302-1-a+%28formerly+G4-EN3-a%29%2BRange"
+  },
+  "hybrid": {
+    "id": null,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+hybrid",
+    "type": "Toggle",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+hybrid.json?card%5Bname%5D=Global+Reporting+Initiative%2BFuel+consumption+from+non-renewable+sources%2C+GRI+302-1-a+%28formerly+G4-EN3-a%29%2Bhybrid"
+  },
+  "topics": {
+    "id": 836953,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+Topic",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+Topic.json",
+    "content": [
+      "Energy Management",
+      "Environment",
+      "Fuel Consumption",
+      "G4-EN",
+      "G4-EN3",
+      "GRI",
+      "GRI 302: Energy",
+      "SDG12: Responsible Consumption and Production",
+      "SDG13: Climate Action",
+      "SDG7: Affordable and Clean Energy",
+      "SDG8: Decent Work and Economic Growth"
+    ]
+  },
+  "scores": {
+    "id": null,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+Score",
+    "type": "Search",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+Score.json"
+  },
+  "formula": {
+    "id": null,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+Formula",
+    "type": "CoffeeScript",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+Formula.json?card%5Bname%5D=Global+Reporting+Initiative%2BFuel+consumption+from+non-renewable+sources%2C+GRI+302-1-a+%28formerly+G4-EN3-a%29%2BFormula"
+  },
+  "rubric": {
+    "id": null,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+Rubric",
+    "type": "JSON",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+Rubric.json?card%5Bname%5D=Global+Reporting+Initiative%2BFuel+consumption+from+non-renewable+sources%2C+GRI+302-1-a+%28formerly+G4-EN3-a%29%2BRubric"
+  },
+  "variables": {
+    "id": null,
+    "name": "Global Reporting Initiative+Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)+*variables",
+    "type": "JSON",
+    "url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+*variables.json?card%5Bname%5D=Global+Reporting+Initiative%2BFuel+consumption+from+non-renewable+sources%2C+GRI+302-1-a+%28formerly+G4-EN3-a%29%2B%2Avariables"
+  },
+  "answers": 3254,
+  "bookmarkers": 42,
+  "datasets": 85,
+  "companies": 1239,
+  "calculations": [
+    "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+Laureen_van_Breen.json",
+    "https://wikirate.org/Richard_Mills+Renewable_energy.json",
+    "https://wikirate.org/Measuring_Fitness+energy_is_from_renewable_sources.json",
+    "https://wikirate.org/WikiRate_SDG_Metric_design+Percentage_renewable_fuel_used.json",
+    "https://wikirate.org/WikiRate_Calculated_Metric_Design_Group+Disclosure_rate_on_selected_social_and_environmental_metrics.json",
+    "https://wikirate.org/University_of_Sydney_SDG_Research_Group_2019+Emissions_and_Energy_Disclosure.json",
+    "https://wikirate.org/Nottingham_Trent_SDG_Summer_School_2019_Research_Group+Nottingham_Trent_SDG_Disclosure_Rate.json",
+    "https://wikirate.org/Commons+Renewable_Fuel_Consumption.json",
+    "https://wikirate.org/theresah+reported_renewable_breakdown.json",
+    "https://wikirate.org/theresah+Total_Renewable_Energy_Use.json",
+    "https://wikirate.org/Climate_Action_Research+Renewables_Disclosure_Rate.json",
+    "https://wikirate.org/University_of_Wollongong_Research_Group_2020+Wollongong_2020_Climate_Disclosure_Rate.json",
+    "https://wikirate.org/Higher_School_of_Economics_Research_Group_2020+From_Farm_to_Fork_2020_Disclosure_Rate.json",
+    "https://wikirate.org/Apparel_Research_Group+Energy_Disclosure_Rate.json"
+  ],
+  "answers_url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a+Answer.json",
+  "items": [],
+  "links": [],
+  "ancestors": [
+    {
+      "id": 801162,
+      "name": "Global Reporting Initiative",
+      "type": "Company",
+      "url": "https://wikirate.org/Global_Reporting_Initiative.json"
+    },
+    {
+      "id": 5662389,
+      "name": "Fuel consumption from non-renewable sources, GRI 302-1-a (formerly G4-EN3-a)",
+      "type": "Metric Title",
+      "url": "https://wikirate.org/Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a.json"
+    }
+  ],
+  "html_url": "https://wikirate.org/Global_Reporting_Initiative+Fuel_consumption_from_non_renewable_sources_GRI_302_1_a_formerly_G4_EN3_a",
+  "created_at": "2016-04-19 15:07:19 UTC",
+  "updated_at": "2022-11-21 14:32:03 UTC",
+  "requested_at": "2023-01-17 10:39:06 UTC"
+}

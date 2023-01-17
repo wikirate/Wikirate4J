@@ -1,0 +1,82 @@
+{
+  "id": 4016726,
+  "name": "Walk Free+MSA Risk Management+Norse Group+2018+checked by",
+  "type": {
+    "id": 47,
+    "name": "Pointer",
+    "type": "Cardtype",
+    "url": "https://wikirate.org/Pointer.json",
+    "codename": "pointer"
+  },
+  "url": "https://wikirate.org/Walk%20Free+MSA%20Risk%20Management+Norse%20Group+2018+checked%20by.json",
+  "content": [
+    "request"
+  ],
+  "checks": 1,
+  "items": [
+    {
+      "id": 2639512,
+      "name": "request",
+      "type": "RichText",
+      "url": "https://wikirate.org/request.json",
+      "codename": "request",
+      "content": ""
+    }
+  ],
+  "links": [],
+  "ancestors": [
+    {
+      "id": 1831803,
+      "name": "Walk Free",
+      "type": "Company",
+      "url": "https://wikirate.org/Walk_Free.json"
+    },
+    {
+      "id": 1831919,
+      "name": "MSA Risk Management",
+      "type": "Metric Title",
+      "url": "https://wikirate.org/MSA_Risk_Management.json"
+    },
+    {
+      "id": 1833552,
+      "name": "Norse Group",
+      "type": "Company",
+      "url": "https://wikirate.org/Norse_Group.json"
+    },
+    {
+      "id": 2637102,
+      "name": "2018",
+      "type": "Year",
+      "url": "https://wikirate.org/2018.json"
+    },
+    {
+      "id": 846790,
+      "name": "checked by",
+      "type": "RichText",
+      "url": "https://wikirate.org/checked_by.json",
+      "codename": "checked_by"
+    },
+    {
+      "id": 1831920,
+      "name": "Walk Free+MSA Risk Management",
+      "type": "Metric",
+      "url": "https://wikirate.org/Walk_Free+MSA_Risk_Management.json"
+    },
+    {
+      "id": 4016722,
+      "name": "Walk Free+MSA Risk Management+Norse Group",
+      "type": "Record",
+      "url": "https://wikirate.org/Walk_Free+MSA_Risk_Management+Norse_Group.json"
+    },
+    {
+      "id": 4016723,
+      "name": "Walk Free+MSA Risk Management+Norse Group+2018",
+      "type": "Answer",
+      "url": "https://wikirate.org/Walk_Free+MSA_Risk_Management+Norse_Group+2018.json"
+    }
+  ],
+  "html_url": "https://wikirate.org/Walk_Free+MSA_Risk_Management+Norse_Group+2018+checked_by",
+  "created_at": "2018-10-19 09:34:16 UTC",
+  "updated_at": "2018-10-19 09:34:16 UTC",
+  "requested_at": "2023-01-17 14:19:35 UTC"
+}

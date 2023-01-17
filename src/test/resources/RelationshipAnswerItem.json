@@ -1,0 +1,17 @@
+{
+  "id": 13483992,
+  "name": "Commons+Supplied By+Aldi Sud+2021+Yangzhou BaiLiLai Footwear Co., Ltd",
+  "type": "Relationship Answer",
+  "url": "https://wikirate.org/Commons+Supplied_By+Aldi_Sud+2021+Yangzhou_BaiLiLai_Footwear_Co_Ltd.json",
+  "content": "",
+  "year": 2021,
+  "value": "Tier 1 Supplier",
+  "metric_id": 2929009,
+  "inverse_metric_id": 2929015,
+  "subject_company_id": 5208,
+  "object_company_id": 3224064,
+  "import": false,
+  "comments": "",
+  "subject_company": "Aldi Sud",
+  "object_company": "Yangzhou BaiLiLai Footwear Co., Ltd"
+}

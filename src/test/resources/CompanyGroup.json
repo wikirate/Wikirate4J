@@ -1,0 +1,90 @@
+{
+  "id": 8079942,
+  "name": "AUS-based Apparel Companies",
+  "type": {
+    "id": 5458825,
+    "name": "Company Group",
+    "type": "Cardtype",
+    "url": "https://wikirate.org/Company_Group.json",
+    "codename": "company_group"
+  },
+  "url": "https://wikirate.org/AUS_based_Apparel_Companies.json",
+  "specification": {
+    "id": 8079943,
+    "name": "AUS-based Apparel Companies+Specification",
+    "type": "RichText",
+    "url": "https://wikirate.org/AUS_based_Apparel_Companies+Specification.json",
+    "content": "explicit"
+  },
+  "companies": {
+    "id": 8079944,
+    "name": "AUS-based Apparel Companies+Company",
+    "type": "List",
+    "url": "https://wikirate.org/AUS_based_Apparel_Companies+Company.json",
+    "content": [
+      "ACCENT GROUP LIMITED",
+      "adidas Australia Pty Ltd",
+      "ADT Group Holdings Pty Ltd",
+      "Amazon Commercial Services Pty Ltd",
+      "Retail Holdings Pty Ltd",
+      "ASSOCIATED RETAILERS LIMITED",
+      "Belgravia Group Pty Ltd",
+      "QUIKSILVER AUSTRALIA PTY LTD",
+      "Chanel (Australia) Pty Ltd",
+      "Christian Dior Australia Pty Ltd",
+      "CITY CHIC COLLECTIVE LIMITED",
+      "DAVID JONES PTY LIMITED",
+      "FACTORY X PTY LTD",
+      "Fast Future Brands Pty Ltd",
+      "GLG Corp Ltd",
+      "GROUP ZARA AUSTRALIA PTY LIMITED",
+      "Kering",
+      "Hallenstein Glasson Holdings",
+      "HBI Holdings Australasia Pty Ltd",
+      "Hermes Australia Pty Limited",
+      "Internet Services Australia 1 Pty Ltd",
+      "PREMIER INVESTMENTS LIMITED",
+      "Kathmandu Holdings Ltd",
+      "LORNA JANE PTY LTD",
+      "Louis Vuitton Australia Pty Ltd",
+      "LOWES - MANHATTAN PTY LTD",
+      "MOSAIC BRANDS LIMITED",
+      "MUNRO FOOTWEAR GROUP PTY LTD",
+      "Myer Holdings Ltd",
+      "Nike Australia Pty Ltd",
+      "PAS Group International Pty Ltd",
+      "PVH Brands Australia Pty Ltd",
+      "RM Williams Pty Ltd",
+      "Spotlight Group Holdings Pty Ltd",
+      "Super Retail Group Limited",
+      "RETAIL APPAREL GROUP PTY LTD",
+      "TRUE ALLIANCE PTY LIMITED",
+      "UNIQLO AUSTRALIA PTY LTD",
+      "Wesfarmers Limited",
+      "COUNTRY ROAD GROUP PTY LTD",
+      "BEST & LESS GROUP PTY LTD",
+      "Costco Wholesale Australia Pty Ltd",
+      "TJX AUSTRALIA HOLDING COMPANY PTY LIMITED",
+      "Decathlon (Australia Pty Ltd)",
+      "Rip Curl Group Pty Ltd",
+      "COGI PTY LTD",
+      "JD SPORTS FASHION AUSTRALIA PTY LTD",
+      "Woolworths Group Limited",
+      "RALPH LAUREN AUSTRALIA PTY LTD",
+      "PRINCESS POLLY ONLINE PTY LTD"
+    ]
+  },
+  "items": [
+
+  ],
+  "links": [
+
+  ],
+  "ancestors": [
+
+  ],
+  "html_url": "https://wikirate.org/AUS_based_Apparel_Companies",
+  "created_at": "2021-10-13 15:06:05 UTC",
+  "updated_at": "2021-12-26 15:24:54 UTC",
+  "requested_at": "2023-01-17 14:25:20 UTC"
+}
