@@ -42,7 +42,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .auth(username, password)
                     .addHeader("content-type", "application/json")
                     .addHeader("X-API-KEY", api_key)
-                    .endpoint(name + ".json")
+                    .endpoint(StringUtils.transformToWikiRateFriendlyName(name) + ".json")
                     .GET();
 
             return WikirateCardFactory.createCompany(request.getResponse());
@@ -223,7 +223,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .auth(username, password)
                     .addHeader("content-type", "application/json")
                     .addHeader("X-API-KEY", api_key)
-                    .endpoint(metricDesigner + "+" + metricName + ".json")
+                    .endpoint(StringUtils.transformToWikiRateFriendlyName(metricDesigner) + "+" + StringUtils.transformToWikiRateFriendlyName(metricName) + ".json")
                     .GET();
 
             return WikirateCardFactory.createMetric(request.getResponse());
@@ -564,7 +564,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .auth(username, password)
                     .addHeader("content-type", "application/json")
                     .addHeader("X-API-KEY", api_key)
-                    .endpoint(name + ".json")
+                    .endpoint(StringUtils.transformToWikiRateFriendlyName(name) + ".json")
                     .GET();
 
             return WikirateCardFactory.createDataset(request.getResponse());
@@ -668,7 +668,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .auth(username, password)
                     .addHeader("content-type", "application/json")
                     .addHeader("X-API-KEY", api_key)
-                    .endpoint(name + ".json")
+                    .endpoint(StringUtils.transformToWikiRateFriendlyName(name) + ".json")
                     .GET();
 
             return WikirateCardFactory.createTopic(request.getResponse());
@@ -866,7 +866,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .auth(username, password)
                     .addHeader("content-type", "application/json")
                     .addHeader("X-API-KEY", api_key)
-                    .endpoint(name + ".json")
+                    .endpoint(StringUtils.transformToWikiRateFriendlyName(name) + ".json")
                     .GET();
 
             return WikirateCardFactory.createCompanyGroup(request.getResponse());
@@ -1004,7 +1004,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .auth(username, password)
                     .addHeader("content-type", "application/json")
                     .addHeader("X-API-KEY", api_key)
-                    .endpoint(name + ".json")
+                    .endpoint(StringUtils.transformToWikiRateFriendlyName(name) + ".json")
                     .GET();
 
             return WikirateCardFactory.createResearchGroup(request.getResponse());
@@ -1083,7 +1083,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .auth(username, password)
                     .addHeader("content-type", "application/json")
                     .addHeader("X-API-KEY", api_key)
-                    .endpoint(name + ".json")
+                    .endpoint(StringUtils.transformToWikiRateFriendlyName(name) + ".json")
                     .GET();
 
             return WikirateCardFactory.createRegion(request.getResponse());
@@ -1261,7 +1261,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .auth(username, password)
                     .addHeader("content-type", "application/json")
                     .addHeader("X-API-KEY", api_key)
-                    .endpoint(name + ".json")
+                    .endpoint(StringUtils.transformToWikiRateFriendlyName(name) + ".json")
                     .GET();
 
             return WikirateCardFactory.createCard(request.getResponse());
@@ -1289,7 +1289,7 @@ public class WikirateClientImpl implements WikirateClient {
 
         private String host;
 
-        Builder() {
+        public Builder() {
 
         }
 
@@ -1311,9 +1311,10 @@ public class WikirateClientImpl implements WikirateClient {
 
         /**
          * Creates a new instance of {@link WikirateClient}
+         *
          * @return the new instance
          */
-        WikirateClient build() {
+        public WikirateClient build() {
             return new WikirateClientImpl(this);
         }
     }
