@@ -1,0 +1,57 @@
+{
+  "id": 3437227,
+  "name": "Commons+Employee",
+  "type": "Metric",
+  "url": "https://wikirate.org/Commons+Employee.json",
+  "designer": "Commons",
+  "title": "Employee",
+  "question": "How many employees does the company have?",
+  "metric_type": "Descendant",
+  "about": null,
+  "methodology": null,
+  "value_type": "Number",
+  "value_options": [
+
+  ],
+  "report_type": "Communication on Progress",
+  "research_policy": "Community Assessed",
+  "unit": "employees",
+  "range": null,
+  "hybrid": "yes",
+  "topics": [
+    "Gender"
+  ],
+  "scores": [
+
+  ],
+  "formula": "(function() {\n\n\n}).call(this);\n",
+  "rubric": null,
+  "variables": [
+    {
+      "metric": "~836097"
+    },
+    {
+      "metric": "~2917748"
+    },
+    {
+      "metric": "~3341341"
+    },
+    {
+      "metric": "~8674786"
+    }
+  ],
+  "answers": 44748,
+  "bookmarkers": 0,
+  "datasets": 6,
+  "companies": 12678,
+  "calculations": [
+    "https://wikirate.org/WikiRate_Calculated_Metric_Design_Group+female_employee.json",
+    "https://wikirate.org/WikiRate_Calculated_Metric_Design_Group+Greenhouse_Gas_emissions_per_employee.json",
+    "https://wikirate.org/WikiRate_Calculated_Metric_Design_Group+Energy_consumption_per_employee.json",
+    "https://wikirate.org/WikiRate_Calculated_Metric_Design_Group+Worker_fatalities_of_workforce.json",
+    "https://wikirate.org/Richard_Mills+Incidents_of_discrimination_per_employee.json",
+    "https://wikirate.org/Apparel_Research_Group+Workforce_Disclosure_Rate_Own_Operations.json",
+    "https://wikirate.org/Laureen_van_Breen+Scope_1_GHG_over_number_of_employees.json"
+  ],
+  "answers_url": "https://wikirate.org/Commons+Employee+Answer.json"
+}

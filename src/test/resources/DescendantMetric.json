@@ -1,0 +1,153 @@
+{
+  "id": 5781964,
+  "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers",
+  "type": {
+    "id": 43576,
+    "name": "Metric",
+    "type": "Cardtype",
+    "url": "https://wikirate.org/Metric.json",
+    "codename": "metric"
+  },
+  "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers.json",
+  "designer": "Clean Clothes Campaign",
+  "title": "Quantity of Tier 2 Suppliers",
+  "question": {
+    "id": 5781966,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+Questions",
+    "type": "PlainText",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Questions.json",
+    "content": "How many tier 2 suppliers does the company have?"
+  },
+  "metric_type": {
+    "id": 5781965,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+*metric type",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+*metric_type.json",
+    "content": "Descendant"
+  },
+  "about": {
+    "id": 5781973,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+About",
+    "type": "RichText",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+About.json",
+    "content": "<p>This metric is part of a Clean Clothes Campaign project to investigate wages in apparel supply chains. The project, [[https://cleanclothes.org/campaigns/filling-the-gap|Filling the Gap: Achieving Living Wages through improved transparency]], is funded by the European Commission and comprises research, campaigning, capacity building and advocacy around an innovative Transparency Tool.<br><br>The Transparency Tool enables users to see at a glance which fashion brands and retailers have the largest gaps between their public commitments on wages, what workers are actually paid, and what they should be paid to be earning a Living Wage in their regional context.<br><br>The aim of the project is to empower workers and workers’ organisations to advocate for their rights and equip consumers with the knowledge/evidence that will enable them to make responsible and sustainable shopping decisions, and to hold brands accountable. The resulting increased transparency and traceability, along with the empowerment of workers, trade unions and CSOs, will lead to concrete improvements in these global supply chains.<br><br>The research was split into two parts: a survey of the brands and an on-the-ground survey of factory workers, initially in China, Indonesia, Croatia, India and Sri Lanka. This metric is derived from the brand survey portion of the research.</p>"
+  },
+  "methodology": {
+    "id": null,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+methodology",
+    "type": "RichText",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+methodology.json"
+  },
+  "value_type": {
+    "id": 5781968,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+value type",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+value_type.json",
+    "content": "Number"
+  },
+  "value_options": {
+    "id": null,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+value options",
+    "type": "List",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+value_options.json"
+  },
+  "report_type": {
+    "id": null,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+Report Type",
+    "type": "List",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Report_Type.json"
+  },
+  "research_policy": {
+    "id": 5781971,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+Research Policy",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Research_Policy.json",
+    "content": "Community Assessed"
+  },
+  "unit": {
+    "id": 5781969,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+unit",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+unit.json",
+    "content": "Tier 2 Suppliers"
+  },
+  "range": {
+    "id": null,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+Range",
+    "type": "Phrase",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Range.json"
+  },
+  "hybrid": {
+    "id": 5781970,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+hybrid",
+    "type": "Toggle",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+hybrid.json",
+    "content": "0"
+  },
+  "topics": {
+    "id": 5781967,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+Topic",
+    "type": "Pointer",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Topic.json",
+    "content": [
+      "Filling the Gap",
+      "Filling the Gap: Brand Survey",
+      "Suppliers",
+      "Supply Chain Transparency"
+    ]
+  },
+  "scores": {
+    "id": null,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+Score",
+    "type": "Search",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Score.json"
+  },
+  "formula": {
+    "id": null,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+Formula",
+    "type": "CoffeeScript",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Formula.json"
+  },
+  "rubric": {
+    "id": null,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+Rubric",
+    "type": "JSON",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Rubric.json"
+  },
+  "variables": {
+    "id": 12265188,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+*variables",
+    "type": "JSON",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+*variables.json",
+    "content": [
+      "Clean Clothes Campaign+Number of Tier 2 Suppliers",
+      "Clean Clothes Campaign+Number of Tier 2 Suppliers in Supplier List"
+    ]
+  },
+  "answers": 118,
+  "bookmarkers": 1,
+  "datasets": 0,
+  "companies": 110,
+  "calculations": [],
+  "answers_url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Answer.json",
+  "items": [],
+  "links": [],
+  "ancestors": [
+    {
+      "id": 13979,
+      "name": "Clean Clothes Campaign",
+      "type": "Company",
+      "url": "https://wikirate.org/Clean_Clothes_Campaign.json"
+    },
+    {
+      "id": 5781963,
+      "name": "Quantity of Tier 2 Suppliers",
+      "type": "Metric Title",
+      "url": "https://wikirate.org/Quantity_of_Tier_2_Suppliers.json"
+    }
+  ],
+  "html_url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers",
+  "created_at": "2020-04-16 14:10:55 UTC",
+  "updated_at": "2020-11-25 15:16:41 UTC",
+  "requested_at": "2023-01-18 12:17:25 UTC"
+}

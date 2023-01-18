@@ -60,6 +60,8 @@ public class TestWikirateCardFactory {
         File wikirating = new File(classLoader.getResource("WikiRating.json").getFile());
         //detailed score metric
         File score = new File(classLoader.getResource("ScoreMetric.json").getFile());
+        //detailed descendant metric
+        File descendant = new File(classLoader.getResource("DescendantMetric.json").getFile());
 
         //Summarized researched metric
         File researched_item = new File(classLoader.getResource("ResearchMetricItem.json").getFile());
@@ -73,6 +75,8 @@ public class TestWikirateCardFactory {
         File wikirating_item = new File(classLoader.getResource("WikiRatingItem.json").getFile());
         //Summarized score metric
         File score_item = new File(classLoader.getResource("ScoreMetricItem.json").getFile());
+        //Summarized descendant metric
+        File descendant_item = new File(classLoader.getResource("DescendantMetricItem.json").getFile());
 
 
         try {
@@ -82,6 +86,7 @@ public class TestWikirateCardFactory {
             String inverse_relationship_json = new Scanner(inverse_relationship, "UTF-8").useDelimiter("\\A").next();
             String wikirating_json = new Scanner(wikirating, "UTF-8").useDelimiter("\\A").next();
             String score_json = new Scanner(score, "UTF-8").useDelimiter("\\A").next();
+            String descendant_json = new Scanner(descendant, "UTF-8").useDelimiter("\\A").next();
 
             String researched_item_json = new Scanner(researched_item, "UTF-8").useDelimiter("\\A").next();
             String formula_item_json = new Scanner(formula_item, "UTF-8").useDelimiter("\\A").next();
@@ -89,6 +94,7 @@ public class TestWikirateCardFactory {
             String inverse_item_relationship_json = new Scanner(inverse_relationship_item, "UTF-8").useDelimiter("\\A").next();
             String wikirating_item_json = new Scanner(wikirating_item, "UTF-8").useDelimiter("\\A").next();
             String score_item_json = new Scanner(score_item, "UTF-8").useDelimiter("\\A").next();
+            String descendant_item_json = new Scanner(descendant_item, "UTF-8").useDelimiter("\\A").next();
 
             assertTrue(WikirateCardFactory.createMetric(researched_json) instanceof Metric);
             assertTrue(WikirateCardFactory.createMetric(formula_json) instanceof Metric);
@@ -96,6 +102,7 @@ public class TestWikirateCardFactory {
             assertTrue(WikirateCardFactory.createMetric(inverse_relationship_json) instanceof Metric);
             assertTrue(WikirateCardFactory.createMetric(wikirating_json) instanceof Metric);
             assertTrue(WikirateCardFactory.createMetric(score_json) instanceof Metric);
+            assertTrue(WikirateCardFactory.createMetric(descendant_json) instanceof Metric);
 
             assertTrue(WikirateCardFactory.createMetric(researched_item_json) instanceof Metric);
             assertTrue(WikirateCardFactory.createMetric(formula_item_json) instanceof Metric);
@@ -103,6 +110,7 @@ public class TestWikirateCardFactory {
             assertTrue(WikirateCardFactory.createMetric(inverse_item_relationship_json) instanceof Metric);
             assertTrue(WikirateCardFactory.createMetric(wikirating_item_json) instanceof Metric);
             assertTrue(WikirateCardFactory.createMetric(score_item_json) instanceof Metric);
+            assertTrue(WikirateCardFactory.createMetric(descendant_item_json) instanceof Metric);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
