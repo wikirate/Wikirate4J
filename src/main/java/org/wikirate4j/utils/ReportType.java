@@ -27,7 +27,8 @@ public enum ReportType {
     SUPPLIER_LIST("Supplier List"),
     SUPPLY_CHAIN_POLICY_DOCUMENT("Supply Chain Policy document"),
     SUSTAINABILITY_REPORT("Sustainability Report"),
-    TERMS_OF_SERVICE("Terms of Service");
+    TERMS_OF_SERVICE("Terms of Service"),
+    UNKNOWN("");
 
     private final String value;
 
@@ -37,5 +38,16 @@ public enum ReportType {
 
     public String value() {
         return this.value;
+    }
+
+
+    public static ReportType getReportType(String report_type) {
+        for (ReportType reportType : values()) {
+            if (reportType.value().equals(report_type)) {
+                return reportType;
+            }
+        }
+
+        return UNKNOWN;
     }
 }
