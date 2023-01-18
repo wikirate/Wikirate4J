@@ -5,7 +5,8 @@ package org.wikirate4j.utils;
 public enum ResearchPolicy {
 
     COMMUNITY_ASSESSED("Community Assessed"),
-    DESIGNER_ASSESSED("Designer_Assessed");
+    DESIGNER_ASSESSED("Designer_Assessed"),
+    UNKNOWN("");
 
     private final String value;
 
@@ -15,5 +16,15 @@ public enum ResearchPolicy {
 
     public String value() {
         return this.value;
+    }
+
+    public static ResearchPolicy getResearchPolicy(String research_policy) {
+        for (ResearchPolicy researchPolicy : values()) {
+            if (researchPolicy.value().equals(research_policy)) {
+                return researchPolicy;
+            }
+        }
+
+        return UNKNOWN;
     }
 }
