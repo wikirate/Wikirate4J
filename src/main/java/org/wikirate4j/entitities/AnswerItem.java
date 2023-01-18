@@ -1,7 +1,11 @@
 package org.wikirate4j.entitities;
 
 import java.util.List;
+
 /**
+ * The AnswerItem Object represents an answer on a Metric. This object is used when we want to add/update an answer on
+ * Wikirate
+ *
  * @author Vasiliki Gkatziaki
  */
 public class AnswerItem {

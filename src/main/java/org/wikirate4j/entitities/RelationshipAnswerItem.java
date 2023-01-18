@@ -1,7 +1,11 @@
 package org.wikirate4j.entitities;
 
 import java.util.List;
+
 /**
+ * The RelationshipAnswerItem Object represents a relationship answer on a relationship metric type. This object is
+ * used when we want to add/update a relationship answer on Wikirate
+ *
  * @author Vasiliki Gkatziaki
  */
 public class RelationshipAnswerItem {
