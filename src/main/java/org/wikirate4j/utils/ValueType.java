@@ -1,4 +1,7 @@
 package org.wikirate4j.utils;
+
+import jdk.internal.org.objectweb.asm.tree.analysis.Value;
+
 /**
  * @author Vasiliki Gkatziaki
  */
@@ -8,7 +11,8 @@ public enum ValueType {
     MONEY("Money"),
     CATEGORY("Category"),
     MULTI_CATEGORY("Multi-Category"),
-    FREE_TEXT("Free Text");
+    FREE_TEXT("Free Text"),
+    UNKNOWN("Unknown");
 
     private final String value;
 
@@ -18,5 +22,15 @@ public enum ValueType {
 
     public String value() {
         return this.value;
+    }
+
+    public static ValueType getValueType(String value_type) {
+        for (ValueType valueType : values()) {
+            if (valueType.value().equals(value_type)) {
+                return valueType;
+            }
+        }
+
+        return UNKNOWN;
     }
 }
