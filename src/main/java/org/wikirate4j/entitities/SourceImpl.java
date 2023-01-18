@@ -1,8 +1,11 @@
 package org.wikirate4j.entitities;
 
 import org.json.JSONObject;
+import org.wikirate4j.utils.ReportType;
 
+import java.util.ArrayList;
 import java.util.List;
+
 /**
  * @author Vasiliki Gkatziaki
  */
@@ -14,7 +17,7 @@ public class SourceImpl extends CardImpl implements Source {
 
     String link;
 
-    List<String> reportTypes;
+    List<ReportType> reportTypes;
 
     List<Integer> years;
 
@@ -55,7 +58,7 @@ public class SourceImpl extends CardImpl implements Source {
     }
 
     @Override
-    public List<String> getReportTypes() {
+    public List<ReportType> getReportTypes() {
         return this.reportTypes;
     }
 
@@ -89,7 +92,7 @@ public class SourceImpl extends CardImpl implements Source {
         private String title;
         private String file;
         private String link;
-        private List<String> reportTypes;
+        private List<ReportType> reportTypes;
         private List<Integer> years;
         private String description;
         private List<String> companies;
@@ -116,7 +119,11 @@ public class SourceImpl extends CardImpl implements Source {
         }
 
         public Builder reportTypes(List<String> reportTypes) {
-            this.reportTypes = reportTypes;
+            if (reportTypes == null) return this;
+            this.reportTypes = new ArrayList<>();
+            for (String reportType : reportTypes) {
+                this.reportTypes.add(ReportType.getReportType(reportType));
+            }
             return this;
         }
 
