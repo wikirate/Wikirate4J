@@ -1,4 +1,5 @@
 package org.wikirate4j.utils;
+
 /**
  * @author Vasiliki Gkatziaki
  */
@@ -10,7 +11,8 @@ public enum MetricType {
     FORMULA("Formula"),
     WIKIRATING("WikiRating"),
     SCORE("Score"),
-    DESCENDANT("Descendant");
+    DESCENDANT("Descendant"),
+    UNKNOWN("Unknown");
 
     private final String value;
 
@@ -20,5 +22,15 @@ public enum MetricType {
 
     public String value() {
         return this.value;
+    }
+
+    public static MetricType getMetricType(String metric_type) {
+        for (MetricType metricType : values()) {
+            if (metricType.value().equals(metric_type)) {
+                return metricType;
+            }
+        }
+
+        return UNKNOWN;
     }
 }
