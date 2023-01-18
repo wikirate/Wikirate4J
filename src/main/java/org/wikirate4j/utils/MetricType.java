@@ -12,7 +12,7 @@ public enum MetricType {
     WIKIRATING("WikiRating"),
     SCORE("Score"),
     DESCENDANT("Descendant"),
-    UNKNOWN("Unknown");
+    UNKNOWN("");
 
     private final String value;
 

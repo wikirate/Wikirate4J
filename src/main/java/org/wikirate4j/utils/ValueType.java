@@ -1,7 +1,5 @@
 package org.wikirate4j.utils;
 
-import jdk.internal.org.objectweb.asm.tree.analysis.Value;
-
 /**
  * @author Vasiliki Gkatziaki
  */
@@ -12,7 +10,7 @@ public enum ValueType {
     CATEGORY("Category"),
     MULTI_CATEGORY("Multi-Category"),
     FREE_TEXT("Free Text"),
-    UNKNOWN("Unknown");
+    UNKNOWN("");
 
     private final String value;
 
