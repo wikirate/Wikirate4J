@@ -1,9 +1,14 @@
 package org.wikirate4j.entitities;
 
 import org.json.JSONObject;
+import org.wikirate4j.utils.MetricType;
+import org.wikirate4j.utils.ReportType;
+import org.wikirate4j.utils.ResearchPolicy;
+import org.wikirate4j.utils.ValueType;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
+
 /**
  * @author Vasiliki Gkatziaki
  */
@@ -15,19 +20,19 @@ public class MetricImpl extends CardImpl implements Metric {
 
     String question;
 
-    String metricType;
+    MetricType metricType;
 
     String about;
 
     String methodology;
 
-    String valueType;
+    ValueType valueType;
 
     List<String> valueOptions;
 
-    String reportType;
+    ReportType reportType;
 
-    String researchPolicy;
+    ResearchPolicy researchPolicy;
 
     String unit;
 
@@ -93,7 +98,7 @@ public class MetricImpl extends CardImpl implements Metric {
     }
 
     @Override
-    public String getMetricType() {
+    public MetricType getMetricType() {
         return this.metricType;
     }
 
@@ -113,7 +118,7 @@ public class MetricImpl extends CardImpl implements Metric {
     }
 
     @Override
-    public String getValueType() {
+    public ValueType getValueType() {
         return this.valueType;
     }
 
@@ -123,12 +128,12 @@ public class MetricImpl extends CardImpl implements Metric {
     }
 
     @Override
-    public String getReportType() {
+    public ReportType getReportType() {
         return this.reportType;
     }
 
     @Override
-    public String getResearchPolicy() {
+    public ResearchPolicy getResearchPolicy() {
         return this.researchPolicy;
     }
 
@@ -192,13 +197,13 @@ public class MetricImpl extends CardImpl implements Metric {
         private String metricName;
         private String metricDesigner;
         private String question;
-        private String metricType;
+        private MetricType metricType;
         private String about;
         private String methodology;
-        private String valueType;
+        private ValueType valueType;
         private List<String> valueOptions;
-        private String reportType;
-        private String researchPolicy;
+        private ReportType reportType;
+        private ResearchPolicy researchPolicy;
         private String unit;
         private String range;
         private List<String> topics;
@@ -232,7 +237,7 @@ public class MetricImpl extends CardImpl implements Metric {
         }
 
         public Builder metric_type(String metricType) {
-            this.metricType = metricType;
+            this.metricType = MetricType.getMetricType(metricType);
             return this;
         }
 
@@ -247,7 +252,7 @@ public class MetricImpl extends CardImpl implements Metric {
         }
 
         public Builder value_type(String valueType) {
-            this.valueType = valueType;
+            this.valueType = ValueType.getValueType(valueType);
             return this;
         }
 
@@ -257,12 +262,12 @@ public class MetricImpl extends CardImpl implements Metric {
         }
 
         public Builder report_type(String reportType) {
-            this.reportType = reportType;
+            this.reportType = ReportType.getReportType(reportType);
             return this;
         }
 
         public Builder research_policy(String researchPolicy) {
-            this.researchPolicy = researchPolicy;
+            this.researchPolicy = ResearchPolicy.getResearchPolicy(researchPolicy);
             return this;
         }
 
