@@ -1,5 +1,7 @@
 package org.wikirate4j.entitities;
 
+import org.wikirate4j.utils.StringUtils;
+
 import java.util.List;
 
 /**
@@ -25,7 +27,7 @@ public class RelationshipAnswerItem {
     }
 
     public RelationshipAnswerItem(String metric_name, String metric_designer, String subject_company, String object_company, int year) {
-        this.card_name = metric_designer + "+" + metric_name + "+" + subject_company + "+" + year + "+" + object_company;
+        this.card_name = metric_designer + "+" + metric_name + "+" + StringUtils.transformToWikiRateFriendlyName(subject_company) + "+" + year + "+" + StringUtils.transformToWikiRateFriendlyName(object_company);
     }
 
     public RelationshipAnswerItem(Long metric_id, Long subject_company_id, Long object_company_id, int year) {
