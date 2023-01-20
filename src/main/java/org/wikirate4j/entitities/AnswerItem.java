@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class AnswerItem {
 
-    int year;
+    Integer year;
 
     String card_name;
 
@@ -34,7 +34,7 @@ public class AnswerItem {
         this.card_name = "~" + metric_id + "+~" + company_id + "+" + year;
     }
 
-    public int getYear() {
+    public Integer getYear() {
         return this.year;
     }
 
