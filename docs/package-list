@@ -1,0 +1,7 @@
+org.wikirate4j
+org.wikirate4j.entitities
+org.wikirate4j.examples
+org.wikirate4j.exceptions
+org.wikirate4j.tests
+org.wikirate4j.utils
+org.wikirate4j.utils.queries
