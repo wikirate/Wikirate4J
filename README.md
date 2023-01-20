@@ -2,6 +2,8 @@
 
 Wikirate4J is a Java library for the [Wikirate API](https://wikirate.org/Use_the_API) licensed under GNU GPL v3.
 
+Detail documentation of this library can be found [here](https://wikirate.github.io/Wikirate4J/)
+
 [![wikirate](https://img.shields.io/twitter/follow/wikirate?style=social)](https://twitter.com/wikirate)
 
 ## Declaring dependency to Wikirate4J
