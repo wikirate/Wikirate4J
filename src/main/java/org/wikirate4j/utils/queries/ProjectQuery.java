@@ -1,6 +1,7 @@
 package org.wikirate4j.utils.queries;
 
 import org.apache.http.message.BasicNameValuePair;
+import org.wikirate4j.utils.ProjectStatus;
 
 /**
  * Class used to build a Project Query
@@ -18,11 +19,8 @@ public class ProjectQuery extends Query<ProjectQuery> {
         return this;
     }
 
-    public ProjectQuery status(boolean only_bookmarked) {
-        if (only_bookmarked)
-            this.filters.add(new BasicNameValuePair("filter[bookmark]", "bookmark"));
-        else
-            this.filters.add(new BasicNameValuePair("filter[bookmark]", "nobookmark"));
+    public ProjectQuery status(ProjectStatus project_status) {
+        this.filters.add(new BasicNameValuePair("filter[wikirate_status]", project_status.value()));
         return this;
     }
 }
