@@ -805,7 +805,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .addHeader("content-type", "application/json")
                     .addHeader("X-API-KEY", api_key)
                     .addParameter("card[type]", "Source")
-                    .addParameter("card[name]", source.getName())
+                    .addParameter("card[name]", source.getName() == null ? "~" + String.valueOf(source.getId()) : source.getName())
                     .addParameter("card[subcards][+title]", source.getTitle())
                     .addParameter("card[subcards][+link]", source.getLink())
                     .addParameter("card[subcards][+company]", getValueFromList(source.getCompanies()))
