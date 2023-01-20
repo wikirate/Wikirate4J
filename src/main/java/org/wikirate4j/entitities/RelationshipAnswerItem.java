@@ -22,7 +22,7 @@ public class RelationshipAnswerItem {
 
     String comment;
 
-    public RelationshipAnswerItem(Long answer_id) {
+    public RelationshipAnswerItem(long answer_id) {
         this.card_name = "~" + answer_id;
     }
 
@@ -30,7 +30,7 @@ public class RelationshipAnswerItem {
         this.card_name = metric_designer + "+" + metric_name + "+" + StringUtils.transformToWikiRateFriendlyName(subject_company) + "+" + year + "+" + StringUtils.transformToWikiRateFriendlyName(object_company);
     }
 
-    public RelationshipAnswerItem(Long metric_id, Long subject_company_id, Long object_company_id, int year) {
+    public RelationshipAnswerItem(long metric_id, long subject_company_id, long object_company_id, int year) {
         this.card_name = "~" + metric_id + "+~" + subject_company_id + "+" + year + "+~" + object_company_id;
     }
 
