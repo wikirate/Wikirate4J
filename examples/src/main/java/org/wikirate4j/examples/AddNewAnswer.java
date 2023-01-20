@@ -1,3 +1,5 @@
+package org.wikirate4j.examples;
+
 import org.wikirate4j.WikirateClient;
 import org.wikirate4j.WikirateClientImpl;
 import org.wikirate4j.entitities.AnswerItem;
@@ -5,11 +7,11 @@ import org.wikirate4j.entitities.AnswerItem;
 import java.util.Map;
 
 /**
- * Example of how to update an existing answer
+ * Example of how to add a new researched answer
  *
  * @author Vasiliki Gkatziaki
  */
-public class UpdateExistingAnswer {
+public class AddNewAnswer {
 
     public static void main(String[] args) {
         Map<String, String> environment = new ProcessBuilder().environment();
@@ -20,12 +22,14 @@ public class UpdateExistingAnswer {
                 .auth(environment.get("USERNAME"), environment.get("PASSWORD"))
                 .build();
 
-        //here we define the id of the answer we want to update and the additional fields we wish to update. Here we
-        //want to update the value of the speficied answer
-        AnswerItem answer = new AnswerItem(13993948)
-                .value(261256);
+        //here we define the metric name, metric designer, the company name and the year the answer is referring to, as
+        //well as the value and the source(s) the answer is linked to.
+        AnswerItem answer = new AnswerItem("Employee", "Core", "Infosys", 2022)
+                .value(260256)
+                .source("Source_000155425");
 
-        client.updateAnswer(answer);
-        System.out.println("Answer successfully updated.");
+        long id = client.addAnswer(answer);
+        System.out.println("The answer has successfully added with id: " + id);
     }
+
 }

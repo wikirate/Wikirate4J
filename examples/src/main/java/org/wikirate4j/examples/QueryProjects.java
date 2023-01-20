@@ -1,3 +1,5 @@
+package org.wikirate4j.examples;
+
 import org.wikirate4j.WikirateClient;
 import org.wikirate4j.WikirateClientImpl;
 import org.wikirate4j.entitities.Card;

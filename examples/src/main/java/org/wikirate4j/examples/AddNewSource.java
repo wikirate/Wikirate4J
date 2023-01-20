@@ -1,3 +1,5 @@
+package org.wikirate4j.examples;
+
 import org.wikirate4j.WikirateClient;
 import org.wikirate4j.WikirateClientImpl;
 import org.wikirate4j.entitities.Source;
@@ -8,11 +10,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Example of how we can update an existing source
+ * Example of how to add a new source
  *
  * @author Vasiliki Gkatziaki
  */
-public class UpdateExistingSource {
+public class AddNewSource {
 
     public static void main(String[] args) {
         Map<String, String> environment = new ProcessBuilder().environment();
@@ -25,16 +27,18 @@ public class UpdateExistingSource {
 
         List<Integer> years = new ArrayList<>();
         years.add(2015);
-        years.add(2014);
-        years.add(2013);
+        List<String> companies = new ArrayList<>();
+        companies.add("Tesla Motors");
 
-        //here we define the source we want to update by giving its id and updating the years the source is referring to.
+        //here we define details about the source such as title, years, companies, url
         Source source = new SourceImpl.Builder()
-                .id(13993958L)
+                .title("Tesla Motors, Inc. 10-K Filing of 2015")
                 .years(years)
+                .companies(companies)
+                .url("https://www.sec.gov/Archives/edgar/data/1318605/000156459016013195/tsla-10k_20151231.htm")
                 .build();
-
-        client.updateSource(source);
-        System.out.println("Source successfully updated.");
+        String source_name = client.addSource(source);
+        System.out.println("The source has successfully added with name: " + source_name);
     }
 }
+
