@@ -2,8 +2,10 @@ package org.wikirate4j.utils.queries;
 
 import org.apache.http.message.BasicNameValuePair;
 import org.wikirate4j.utils.*;
+
 /**
  * Class used to build an Answer Query
+ *
  * @author Vasiliki Gkatziaki
  */
 public class AnswerQuery extends Query<AnswerQuery> {
@@ -17,7 +19,7 @@ public class AnswerQuery extends Query<AnswerQuery> {
         return this;
     }
 
-    public AnswerQuery company_id(Long id) {
+    public AnswerQuery company_id(long id) {
         super.filters.add(new BasicNameValuePair("filter[company_id][]", String.valueOf(id)));
         return this;
     }
@@ -42,7 +44,7 @@ public class AnswerQuery extends Query<AnswerQuery> {
         return this;
     }
 
-    public AnswerQuery metric_id(Long id) {
+    public AnswerQuery metric_id(long id) {
         super.filters.add(new BasicNameValuePair("filter[metric_id][]", String.valueOf(id)));
         return this;
     }

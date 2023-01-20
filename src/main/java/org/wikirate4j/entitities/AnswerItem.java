@@ -20,7 +20,7 @@ public class AnswerItem {
 
     String comment;
 
-    public AnswerItem(Long answer_id) {
+    public AnswerItem(long answer_id) {
         this.card_name = "~" + answer_id;
     }
 
@@ -28,7 +28,7 @@ public class AnswerItem {
         this.card_name = metric_designer + "+" + metric_name + "+" + company_name + "+" + year;
     }
 
-    public AnswerItem(Long metric_id, Long company_id, int year) {
+    public AnswerItem(long metric_id, long company_id, int year) {
         this.card_name = "~" + metric_id + "+~" + company_id + "+" + year;
     }
 

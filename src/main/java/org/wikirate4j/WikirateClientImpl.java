@@ -327,7 +327,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .auth(username, password)
                     .addHeader("content-type", "application/json")
                     .addHeader("X-API-KEY", api_key)
-                    .endpoint("Answers.json")
+                    .endpoint("Answer.json")
                     .parameters(query.getQueryParams())
                     .filters(query.getFilters())
                     .GET();

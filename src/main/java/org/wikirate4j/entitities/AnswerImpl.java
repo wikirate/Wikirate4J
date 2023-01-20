@@ -5,6 +5,7 @@ import org.json.JSONObject;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+
 /**
  * @author Vasiliki Gkatziaki
  */
@@ -123,7 +124,7 @@ public class AnswerImpl extends CardImpl implements Answer {
         public Builder() {
             super();
         }
-
+        
         public Builder metricName(String metricName) {
             this.metricName = metricName;
             return this;
