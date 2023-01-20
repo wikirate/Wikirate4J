@@ -1,3 +1,5 @@
+package org.wikirate4j.tests;
+
 import org.junit.Test;
 import org.wikirate4j.WikirateClient;
 import org.wikirate4j.WikirateClientImpl;

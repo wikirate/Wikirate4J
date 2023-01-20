@@ -1,3 +1,5 @@
+package org.wikirate4j.tests;
+
 import org.junit.Test;
 import org.wikirate4j.WikirateCardFactory;
 import org.wikirate4j.entitities.*;
