@@ -24,7 +24,7 @@ public class RelationshipAnswerQuery extends Query<RelationshipAnswerQuery> {
     }
 
     public RelationshipAnswerQuery subject_company(String name) {
-        super.filters.add(new BasicNameValuePair("filter[subject_company][]", name));
+        super.filters.add(new BasicNameValuePair("filter[name]", name));
         return this;
     }
 
@@ -38,33 +38,8 @@ public class RelationshipAnswerQuery extends Query<RelationshipAnswerQuery> {
         return this;
     }
 
-    public RelationshipAnswerQuery value_type(ValueType value_type) {
-        super.filters.add(new BasicNameValuePair("filter[value_type][]", value_type.value()));
-        return this;
-    }
-
     public RelationshipAnswerQuery dataset(String dataset) {
         super.filters.add(new BasicNameValuePair("filter[dataset][]", dataset));
-        return this;
-    }
-
-    public RelationshipAnswerQuery value(String value) {
-        super.filters.add(new BasicNameValuePair("filter[value][]", value));
-        return this;
-    }
-
-    public RelationshipAnswerQuery value(Number value) {
-        super.filters.add(new BasicNameValuePair("filter[value][]", String.valueOf(value)));
-        return this;
-    }
-
-    public RelationshipAnswerQuery value_from(Number from) {
-        super.filters.add(new BasicNameValuePair("filter[value][from]", String.valueOf(from)));
-        return this;
-    }
-
-    public RelationshipAnswerQuery value_to(Number to) {
-        super.filters.add(new BasicNameValuePair("filter[value][to]", String.valueOf(to)));
         return this;
     }
 
