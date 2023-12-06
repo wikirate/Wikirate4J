@@ -284,7 +284,6 @@ public class WikirateCardFactory {
                 .metricDesigner(json.getString("metric").split("\\+")[0])
                 .metricName(json.getString("metric").split("\\+")[1])
                 .sources(getContentOfArray("sources", json, Source.class))
-                .checkedBy(getContentOf("checked_by", json, CheckedBy.class))
                 .id(getContentOf("id", json, Long.class))
                 .name(getContentOf("name", json, String.class))
                 .url(getContentOf("url", json, String.class))
