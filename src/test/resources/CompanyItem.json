@@ -2,12 +2,21 @@
   "id": 3529,
   "name": "The Guardian",
   "type": "Company",
-  "url": "https://wikirate.org/The_Guardian.json",
-  "wikipedia": "The Guardian",
-  "open_corporates": null,
-  "alias": [
-  ],
+  "url": "https://wikirate.org/The%20Guardian.json?view=atom",
+  "image": "https://wikirate-production-storage.fra1.cdn.digitaloceanspaces.com/files/37477/12604112-medium.png",
   "headquarters": null,
-  "oar_id": null,
-  "sec_cik": null
+  "website": "https://www.theguardian.com",
+  "alias": null,
+  "australian_business_number": null,
+  "australian_company_number": null,
+  "international_securities_identification_number": null,
+  "legal_entity_identifier": null,
+  "open_corporates_id": null,
+  "open_supply_id": null,
+  "sec_central_index_key": null,
+  "uk_company_number": null,
+  "wikidata_id": null,
+  "wikipedia": "The Guardian",
+  "requested_at": "2025-12-18 21:04:59 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

@@ -1,12 +1,13 @@
 {
   "id": null,
-  "name": "Commons+Renewable Fuel Consumption (%)+Lexmark International, Inc.+2016",
+  "name": "Commons+Renewable Fuel Consumption+Lexmark International Inc+2016",
   "type": "Answer",
-  "url": "https://wikirate.org/Commons+Renewable_Fuel_Consumption+Lexmark_International_Inc+2016.json",
+  "url": "https://wikirate.org/Commons+Renewable%20Fuel%20Consumption+Lexmark%20International%20Inc+2016.json?view=atom",
   "metric": "Commons+Renewable Fuel Consumption (%)",
   "company": "Lexmark International, Inc.",
   "year": 2016,
-  "value": null,
-  "comments": null,
-  "record_url": "https://wikirate.org/Commons+Renewable_Fuel_Consumption+Lexmark_International_Inc.json"
+  "unit": "%",
+  "answer_url": "https://wikirate.org/Commons+Renewable_Fuel_Consumption+Lexmark_International_Inc.json",
+  "requested_at": "2025-12-18 21:02:31 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

@@ -8,7 +8,8 @@
     "url": "https://wikirate.org/Company_Group.json",
     "codename": "company_group"
   },
-  "url": "https://wikirate.org/AUS_based_Apparel_Companies.json",
+  "url": "https://wikirate.org/AUS-based%20Apparel%20Companies.json",
+  "content": "",
   "specification": {
     "id": 8079943,
     "name": "AUS-based Apparel Companies+Specification",
@@ -74,17 +75,12 @@
       "PRINCESS POLLY ONLINE PTY LTD"
     ]
   },
-  "items": [
-
-  ],
-  "links": [
-
-  ],
-  "ancestors": [
-
-  ],
+  "items": [],
+  "links": [],
+  "ancestors": [],
   "html_url": "https://wikirate.org/AUS_based_Apparel_Companies",
   "created_at": "2021-10-13 15:06:05 UTC",
-  "updated_at": "2021-12-26 15:24:54 UTC",
-  "requested_at": "2023-01-17 14:25:20 UTC"
+  "updated_at": "2023-08-21 13:41:45 UTC",
+  "requested_at": "2025-12-18 21:04:14 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

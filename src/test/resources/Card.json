@@ -1,6 +1,6 @@
 {
   "id": 7301440,
-  "name": "Nike Inc.+OS ID",
+  "name": "Nike Inc.+Open Supply ID",
   "type": {
     "id": 52,
     "name": "Phrase",
@@ -8,9 +8,18 @@
     "url": "https://wikirate.org/Phrase.json",
     "codename": "phrase"
   },
-  "url": "https://wikirate.org/Nike_Inc+os_id.json",
-  "content": "US2020349PNHW2P",
-  "items": [],
+  "url": "https://wikirate.org/~7301440.json",
+  "content": [
+    "US2020349PNHW2P"
+  ],
+  "items": [
+    {
+      "id": null,
+      "name": "US2020349PNHW2P",
+      "type": "RichText",
+      "url": "https://wikirate.org/US2020349PNHW2P.json"
+    }
+  ],
   "links": [],
   "ancestors": [
     {
@@ -21,14 +30,15 @@
     },
     {
       "id": 6120068,
-      "name": "OS ID",
-      "type": "Metric Title",
-      "url": "https://wikirate.org/OS_ID.json",
+      "name": "Open Supply ID",
+      "type": "Company Identifier",
+      "url": "https://wikirate.org/Open_Supply_ID.json",
       "codename": "oar_id"
     }
   ],
-  "html_url": "https://wikirate.org/Nike_Inc+OS_ID",
+  "html_url": "https://wikirate.org/Nike_Inc+Open_Supply_ID",
   "created_at": "2021-04-17 22:35:07 UTC",
   "updated_at": "2021-04-17 22:35:07 UTC",
-  "requested_at": "2023-01-17 14:03:19 UTC"
+  "requested_at": "2025-12-18 21:03:06 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

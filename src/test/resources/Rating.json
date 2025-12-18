@@ -8,7 +8,7 @@
     "url": "https://wikirate.org/Metric.json",
     "codename": "metric"
   },
-  "url": "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2020.json",
+  "url": "https://wikirate.org/Fashion%20Revolution+Fashion%20Transparency%20Index%202020.json",
   "designer": "Fashion Revolution",
   "title": "Fashion Transparency Index 2020",
   "question": {
@@ -23,14 +23,14 @@
     "name": "Fashion Revolution+Fashion Transparency Index 2020+*metric type",
     "type": "Pointer",
     "url": "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2020+*metric_type.json",
-    "content": "WikiRating"
+    "content": "Rating"
   },
   "about": {
     "id": 5809540,
     "name": "Fashion Revolution+Fashion Transparency Index 2020+About",
     "type": "RichText",
     "url": "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2020+About.json",
-    "content": "<p style=\"font-size: 15.2px;\">While we are seeing companies share their policies and commitments on human rights and the environment, there is still much crucial information about the practices of the fashion industry that remains concealed — particularly when it comes to impacts on the lives of workers in the supply chain and on the environment.</p>\r\n<p style=\"font-size: 15.2px;\">The Fashion Transparency Index 2020 reviews and ranks 250 of the biggest global fashion and apparel brands and retailers according to how much information they disclose about their suppliers, supply chain policies and practices, and social and environmental impact.</p>\r\n<p style=\"font-size: 15.2px;\">Source: <a href=\"https://www.fashionrevolution.org/about/transparency/\" style=\"font-size: 1rem;\">https://www.fashionrevolution.org/about/transparency/</a></p>\r\n<p style=\"font-size: 15.2px;\">This year for the first time, Fashion Revolution has partnered with WikiRate to make the Fashion Transparency Index and its underlying data more accessible and comparable through WikiRate’s open data platform. Having recently launched their benchmarks program, WikiRate supports benchmarking initiatives in making their company data and scoring systems available for anyone to use in research and advocacy. </p>\r\n<p style=\"font-size: 15.2px;\"><span style=\"font-weight: bolder;\">A note on the scoring system</span></p>\r\n<p style=\"font-size: 15.2px;\">WikiRate has a standardised 10-point scoring system making it possible to compare company scores across different benchmarks. On WikiRate.org, the Fashion Transparency Index scoring system, where each company can get a maximum of 250 points, has been converted to the 10-point scoring system - with 10 being the highest a company can score and 0 being the lowest. These company scores can also be translated to percentages e.g. if a company has scored 2.5 out of 10 on WikiRate, they have achieved 25% of the 250 points in the Fashion Transparency Index.</p>"
+    "content": "<p style=\"font-size: 15.2px;\">While we are seeing companies share their policies and commitments on human rights and the environment, there is still much crucial information about the practices of the fashion industry that remains concealed — particularly when it comes to impacts on the lives of workers in the supply chain and on the environment.</p>\r\n<p style=\"font-size: 15.2px;\">The Fashion Transparency Index 2020 reviews and ranks 250 of the biggest global fashion and apparel brands and retailers according to how much information they disclose about their suppliers, supply chain policies and practices, and social and environmental impact.</p>\r\n<p style=\"font-size: 15.2px;\">Source: <a href=\"https://www.fashionrevolution.org/about/transparency/\" style=\"font-size: 1rem;\">https://www.fashionrevolution.org/about/transparency/</a></p>\r\n<p style=\"font-size: 15.2px;\">This year for the first time, Fashion Revolution has partnered with Wikirate to make the Fashion Transparency Index and its underlying data more accessible and comparable through Wikirate’s open data platform. Having recently launched their benchmarks program, Wikirate supports benchmarking initiatives in making their company data and scoring systems available for anyone to use in research and advocacy. </p>\r\n<p style=\"font-size: 15.2px;\"><span style=\"font-weight: bolder;\">A note on the scoring system</span></p>\r\n<p style=\"font-size: 15.2px;\">Wikirate has a standardised 10-point scoring system making it possible to compare company scores across different benchmarks. On Wikirate.org, the Fashion Transparency Index scoring system, where each company can get a maximum of 250 points, has been converted to the 10-point scoring system - with 10 being the highest a company can score and 0 being the lowest. These company scores can also be translated to percentages e.g. if a company has scored 2.5 out of 10 on Wikirate, they have achieved 25% of the 250 points in the Fashion Transparency Index.</p>"
   },
   "methodology": {
     "id": null,
@@ -56,11 +56,11 @@
     "type": "List",
     "url": "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2020+Report_Type.json"
   },
-  "research_policy": {
+  "assessment": {
     "id": null,
-    "name": "Fashion Revolution+Fashion Transparency Index 2020+Research Policy",
+    "name": "Fashion Revolution+Fashion Transparency Index 2020+Assessment",
     "type": "Pointer",
-    "url": "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2020+Research_Policy.json"
+    "url": "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2020+Assessment.json"
   },
   "unit": {
     "id": null,
@@ -81,15 +81,24 @@
     "url": "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2020+hybrid.json"
   },
   "topics": {
-    "id": 5809538,
+    "id": 21494095,
     "name": "Fashion Revolution+Fashion Transparency Index 2020+Topic",
-    "type": "Pointer",
+    "type": "List",
     "url": "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2020+Topic.json",
     "content": [
-      "Benchmarks",
-      "Governance",
-      "Policy"
+      "Wikirate ESG Topics+Environment",
+      "Wikirate ESG Topics+Water",
+      "Wikirate ESG Topics+Water Usage",
+      "Wikirate ESG Topics+Governance",
+      "Wikirate ESG Topics+Transparency",
+      "Wikirate ESG Topics+Sustainability & ESG Reporting"
     ]
+  },
+  "topic_frameworks": {
+    "id": null,
+    "name": "Fashion Revolution+Fashion Transparency Index 2020+Topic Framework",
+    "type": "List",
+    "url": "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2020+Topic_Framework.json"
   },
   "scores": {
     "id": null,
@@ -116,17 +125,19 @@
     "url": "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2020+*variables.json",
     "content": [
       "Fashion Revolution+1. Policy & Commitments Score (2020)",
-      "Fashion Revolution+2. Governance Score",
-      "Fashion Revolution+3. Traceability Score",
-      "Fashion Revolution+4. Know, Show & Fix Score",
-      "Fashion Revolution+5. Spotlight Issues Score"
+      "Fashion Revolution+2. Governance Score (2020)",
+      "Fashion Revolution+3. Traceability Score (2020)",
+      "Fashion Revolution+4. Know, Show & Fix Score (2020)",
+      "Fashion Revolution+5. Spotlight Issues Score (2020)"
     ]
   },
-  "answers": 250,
+  "answer": 250,
   "bookmarkers": 10,
   "datasets": 3,
   "companies": 250,
-  "calculations": [],
+  "calculations": [
+    "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index.json"
+  ],
   "answers_url": "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2020+Answer.json",
   "items": [],
   "links": [],
@@ -146,6 +157,7 @@
   ],
   "html_url": "https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2020",
   "created_at": "2020-04-21 14:03:36 UTC",
-  "updated_at": "2021-10-27 13:20:41 UTC",
-  "requested_at": "2023-01-17 11:52:59 UTC"
+  "updated_at": "2025-09-13 10:43:41 UTC",
+  "requested_at": "2025-12-18 21:16:03 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

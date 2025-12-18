@@ -8,13 +8,13 @@
     "url": "https://wikirate.org/Source.json",
     "codename": "source"
   },
-  "url": "https://wikirate.org/Source_000176876.json",
+  "url": "https://wikirate.org/Source-000176876.json",
   "file": {
     "id": 14411834,
     "name": "Source-000176876+File",
     "type": "File",
     "url": "https://wikirate.org/Source_000176876+File.json",
-    "content": "https://dq06ugkuram52.cloudfront.net/files/14411834/37526510.pdf"
+    "content": "https://wikirate-production-storage.fra1.cdn.digitaloceanspaces.com/files/14411834/37526510.pdf"
   },
   "link": {
     "id": 14411839,
@@ -93,5 +93,6 @@
     "type": "Search",
     "url": "https://wikirate.org/Source_000176876+Answer.json"
   },
-  "requested_at": "2023-01-17 12:34:56 UTC"
+  "requested_at": "2025-12-18 21:14:18 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

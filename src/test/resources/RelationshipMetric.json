@@ -8,8 +8,7 @@
     "url": "https://wikirate.org/Metric.json",
     "codename": "metric"
   },
-  "url": "https://wikirate.org/Commons+Supplied_By.json",
-  "codename": "commons_supplied_by",
+  "url": "https://wikirate.org/Commons+Supplied%20By.json",
   "designer": "Commons",
   "title": "Supplied By",
   "question": {
@@ -24,7 +23,7 @@
     "name": "Commons+Supplied By+*metric type",
     "type": "Pointer",
     "url": "https://wikirate.org/Commons+Supplied_By+*metric_type.json",
-    "content": "Relationship"
+    "content": "Relation"
   },
   "about": {
     "id": 6126340,
@@ -45,7 +44,7 @@
     "name": "Commons+Supplied By+value type",
     "type": "Pointer",
     "url": "https://wikirate.org/Commons+Supplied_By+value_type.json",
-    "content": "Category"
+    "content": "Multi-Category"
   },
   "value_options": {
     "id": 2929013,
@@ -53,6 +52,7 @@
     "type": "Pointer",
     "url": "https://wikirate.org/Commons+Supplied_By+value_options.json",
     "content": [
+      "Tier 0 Supplier",
       "Tier 1 Supplier",
       "Tier 2 Supplier",
       "Tier 3 Supplier",
@@ -67,11 +67,11 @@
     "url": "https://wikirate.org/Commons+Supplied_By+Report_Type.json",
     "content": "Supplier List"
   },
-  "research_policy": {
+  "assessment": {
     "id": 3322869,
-    "name": "Commons+Supplied By+Research Policy",
+    "name": "Commons+Supplied By+Assessment",
     "type": "Pointer",
-    "url": "https://wikirate.org/Commons+Supplied_By+Research_Policy.json",
+    "url": "https://wikirate.org/Commons+Supplied_By+Assessment.json",
     "content": "Community Assessed"
   },
   "unit": {
@@ -93,19 +93,16 @@
     "url": "https://wikirate.org/Commons+Supplied_By+hybrid.json"
   },
   "topics": {
-    "id": 3244478,
+    "id": null,
     "name": "Commons+Supplied By+Topic",
-    "type": "Pointer",
-    "url": "https://wikirate.org/Commons+Supplied_By+Topic.json",
-    "content": [
-      "ETL",
-      "Filling the Gap",
-      "Filling the Gap: Brand Survey",
-      "Suppliers",
-      "Supply Chain",
-      "Supply Chain Transparency",
-      "Suppliers list"
-    ]
+    "type": "List",
+    "url": "https://wikirate.org/Commons+Supplied_By+Topic.json"
+  },
+  "topic_frameworks": {
+    "id": null,
+    "name": "Commons+Supplied By+Topic Framework",
+    "type": "List",
+    "url": "https://wikirate.org/Commons+Supplied_By+Topic_Framework.json"
   },
   "scores": {
     "id": null,
@@ -131,17 +128,17 @@
     "type": "JSON",
     "url": "https://wikirate.org/Commons+Supplied_By+*variables.json"
   },
-  "answers": 447,
+  "answer": 759,
   "bookmarkers": 4,
   "datasets": 13,
-  "companies": 270,
+  "companies": 350,
   "calculations": [
     "https://wikirate.org/Commons+Supplier_List_all.json",
-    "https://wikirate.org/Apparel_Research_Group+Percentage_of_suppliers_with_proportion_of_female_workers_disclosed.json",
     "https://wikirate.org/Apparel_Research_Group+Percentage_of_suppliers_with_proportion_of_migrant_workers_disclosed.json",
+    "https://wikirate.org/Apparel_Research_Group+Percentage_of_supplier_with_number_of_workers_disclosed.json",
+    "https://wikirate.org/Apparel_Research_Group+Percentage_of_suppliers_with_proportion_of_female_workers_disclosed.json",
     "https://wikirate.org/Apparel_Research_Group+Percentage_of_suppliers_with_proportion_of_male_workers_disclosed.json",
-    "https://wikirate.org/Apparel_Research_Group+Percentage_of_suppliers_with_disclosed_address.json",
-    "https://wikirate.org/Apparel_Research_Group+Percentage_of_supplier_with_number_of_workers_disclosed.json"
+    "https://wikirate.org/Apparel_Research_Group+Percentage_of_suppliers_with_disclosed_address.json"
   ],
   "answers_url": "https://wikirate.org/Commons+Supplied_By+Answer.json",
   "items": [],
@@ -151,7 +148,8 @@
       "id": 3411173,
       "name": "Commons",
       "type": "Research Group",
-      "url": "https://wikirate.org/Commons.json"
+      "url": "https://wikirate.org/Commons.json",
+      "codename": "commons"
     },
     {
       "id": 2929008,
@@ -163,5 +161,6 @@
   "html_url": "https://wikirate.org/Commons+Supplied_By",
   "created_at": "2017-07-09 22:47:20 UTC",
   "updated_at": "2021-09-09 09:50:44 UTC",
-  "requested_at": "2023-01-17 11:28:48 UTC"
+  "requested_at": "2025-12-18 21:12:06 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

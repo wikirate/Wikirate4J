@@ -2,12 +2,11 @@
   "id": 5768831,
   "name": "Commons+Is Brand Of",
   "type": "Metric",
-  "url": "https://wikirate.org/Commons+Is_Brand_Of.json",
-  "codename": "commons_is_brand_of",
+  "url": "https://wikirate.org/Commons+Is%20Brand%20Of.json?view=atom",
   "designer": "Commons",
   "title": "Is Brand Of",
   "question": "Which company is the brand owned by, and in which sector(s) do they operate?",
-  "metric_type": "Inverse Relationship",
+  "metric_type": "Inverse Relation",
   "about": null,
   "methodology": null,
   "value_type": null,
@@ -24,7 +23,7 @@
     "Media/ Culture and Graphics",
     "Oil and Gas Production/ and Oil Refining",
     "Postal and Telecommunications Services",
-    "Public services",
+    "Public Service",
     "Shipping/ Ports/ Fisheries and Inland Waterways",
     "Textiles/ Clothing/ Leather and Footwear",
     "Transport",
@@ -32,25 +31,22 @@
     "Utilities"
   ],
   "report_type": null,
-  "research_policy": "Community Assessed",
+  "assessment": "Community Assessed",
   "unit": null,
   "range": null,
   "hybrid": "no",
-  "topics": [
-
-  ],
-  "scores": [
-
-  ],
+  "topics": [],
+  "topic_frameworks": [],
+  "scores": [],
   "formula": "(function() {\n\n\n}).call(this);\n",
   "rubric": null,
   "variables": "",
-  "answers": 1102,
-  "bookmarkers": 1,
-  "datasets": 3,
-  "companies": 926,
-  "calculations": [
-
-  ],
-  "answers_url": "https://wikirate.org/Commons+Is_Brand_Of+Answer.json"
+  "answer": 1109,
+  "bookmarkers": 5,
+  "datasets": 5,
+  "companies": 933,
+  "calculations": [],
+  "answers_url": "https://wikirate.org/Commons+Is_Brand_Of+Answer.json",
+  "requested_at": "2025-12-18 21:09:53 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

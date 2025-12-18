@@ -2,8 +2,7 @@
   "id": 5456201,
   "name": "Core+Headquarters Location",
   "type": "Metric",
-  "url": "https://wikirate.org/Core+Headquarters_Location.json",
-  "codename": "core_headquarters_location",
+  "url": "https://wikirate.org/Core+Headquarters%20Location.json?view=atom",
   "designer": "Core",
   "title": "Headquarters Location",
   "question": "Where is the company headquarters located?",
@@ -386,7 +385,6 @@
     "Vanuatu",
     "Venezuela",
     "Vermont (United States)",
-    "Viet Nam",
     "Vietnam",
     "Virginia (United States)",
     "Wallis and Futuna",
@@ -405,28 +403,27 @@
     "Zimbabwe"
   ],
   "report_type": "Company Website",
-  "research_policy": "Community Assessed",
+  "assessment": "Community Assessed",
   "unit": null,
   "range": null,
   "hybrid": "no",
-  "topics": [
-    "Governance",
-    "Location"
-  ],
-  "scores": [
-
-  ],
+  "topics": [],
+  "topic_frameworks": [],
+  "scores": [],
   "formula": "(function() {\n\n\n}).call(this);\n",
   "rubric": null,
   "variables": "",
-  "answers": 116407,
-  "bookmarkers": 9,
+  "answer": 136943,
+  "bookmarkers": 12,
   "datasets": 13,
-  "companies": 116407,
+  "companies": 136943,
   "calculations": [
     "https://wikirate.org/Core+ILO_Region.json",
     "https://wikirate.org/Core+Country.json",
-    "https://wikirate.org/Apparel_Research_Group+Economic_Disclosure_Rate.json"
+    "https://wikirate.org/Apparel_Research_Group+Economic_Disclosure_Rate.json",
+    "https://wikirate.org/GreenDex+Country.json"
   ],
-  "answers_url": "https://wikirate.org/Core+Headquarters_Location+Answer.json"
+  "answers_url": "https://wikirate.org/Core+Headquarters_Location+Answer.json",
+  "requested_at": "2025-12-18 21:09:17 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

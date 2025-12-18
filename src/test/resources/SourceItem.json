@@ -2,8 +2,8 @@
   "id": 14469338,
   "name": "Source-000176887",
   "type": "Source",
-  "url": "https://wikirate.org/Source_000176887.json",
-  "file": "https://dq06ugkuram52.cloudfront.net/files/14469339/39079551.pdf",
+  "url": "https://wikirate.org/Source-000176887.json?view=atom",
+  "file": "https://wikirate-production-storage.fra1.cdn.digitaloceanspaces.com/files/14469339/39079551.pdf",
   "link": "https://www.whistles.com/modern-slavery-act.html",
   "report_type": [
     "Company Website",
@@ -13,5 +13,7 @@
   "title": "Whistles Company Website ",
   "year": [
     "2020"
-  ]
+  ],
+  "requested_at": "2025-12-18 21:14:42 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

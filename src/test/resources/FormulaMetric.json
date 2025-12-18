@@ -1,151 +1,46 @@
 {
   "id": 984357,
   "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score",
-  "type": {
-    "id": 43576,
-    "name": "Metric",
-    "type": "Cardtype",
-    "url": "https://wikirate.org/Metric.json",
-    "codename": "metric"
-  },
-  "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score.json",
+  "type": "Metric",
+  "url": "https://wikirate.org/Center%20for%20Sustainable%20Organizations+Cumulative%20CO2%20Emissions%20Context-Based%20Absolute%20Score.json?view=atom",
   "designer": "Center for Sustainable Organizations",
   "title": "Cumulative CO2 Emissions Context-Based Absolute Score",
-  "question": {
-    "id": 985004,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+Questions",
-    "type": "PlainText",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+Questions.json",
-    "content": "Were the company's CO2 emissions within their \"allowance\" of global emissions (as determined by their value-added contribution to GDP)? The values for this metric are cumulative (i.e. reflect every year since 2005)"
-  },
-  "metric_type": {
-    "id": 984358,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+*metric type",
-    "type": "Pointer",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+*metric_type.json",
-    "content": "Formula"
-  },
-  "about": {
-    "id": 985005,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+About",
-    "type": "RichText",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+About.json",
-    "content": "<p>This metric is based on the [[http://www.sustainableorganizations.org/context-based-metrics-in-public-domain.html | Centre for Sustainable Organizations]] context-based carbon metric. It is still considered to be a work in progress.</p>"
-  },
-  "methodology": {
-    "id": null,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+methodology",
-    "type": "RichText",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+methodology.json?card%5Bname%5D=Center+for+Sustainable+Organizations%2BCumulative+CO2+Emissions+Context-Based+Absolute+Score%2Bmethodology"
-  },
-  "value_type": {
-    "id": null,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+value type",
-    "type": "Pointer",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+value_type.json?card%5Bname%5D=Center+for+Sustainable+Organizations%2BCumulative+CO2+Emissions+Context-Based+Absolute+Score%2Bvalue+type"
-  },
-  "value_options": {
-    "id": null,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+value options",
-    "type": "List",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+value_options.json?card%5Bname%5D=Center+for+Sustainable+Organizations%2BCumulative+CO2+Emissions+Context-Based+Absolute+Score%2Bvalue+options"
-  },
-  "report_type": {
-    "id": null,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+Report Type",
-    "type": "List",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+Report_Type.json?card%5Bname%5D=Center+for+Sustainable+Organizations%2BCumulative+CO2+Emissions+Context-Based+Absolute+Score%2BReport+Type"
-  },
-  "research_policy": {
-    "id": null,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+Research Policy",
-    "type": "Pointer",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+Research_Policy.json?card%5Bname%5D=Center+for+Sustainable+Organizations%2BCumulative+CO2+Emissions+Context-Based+Absolute+Score%2BResearch+Policy"
-  },
-  "unit": {
-    "id": null,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+unit",
-    "type": "Phrase",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+unit.json?card%5Bname%5D=Center+for+Sustainable+Organizations%2BCumulative+CO2+Emissions+Context-Based+Absolute+Score%2Bunit"
-  },
-  "range": {
-    "id": null,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+Range",
-    "type": "Phrase",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+Range.json?card%5Bname%5D=Center+for+Sustainable+Organizations%2BCumulative+CO2+Emissions+Context-Based+Absolute+Score%2BRange"
-  },
-  "hybrid": {
-    "id": null,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+hybrid",
-    "type": "Toggle",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+hybrid.json?card%5Bname%5D=Center+for+Sustainable+Organizations%2BCumulative+CO2+Emissions+Context-Based+Absolute+Score%2Bhybrid"
-  },
-  "topics": {
-    "id": 1085308,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+Topic",
-    "type": "Pointer",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+Topic.json",
-    "content": [
-      "Emissions",
-      "Environment",
-      "Climate Change",
-      "Laws & Regulations",
-      "Pollution & Toxics"
-    ]
-  },
-  "scores": {
-    "id": null,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+Score",
-    "type": "Search",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+Score.json"
-  },
-  "formula": {
-    "id": 984359,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+Formula",
-    "type": "CoffeeScript",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+Formula.json",
-    "content": "m1 / m2"
-  },
-  "rubric": {
-    "id": null,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+Rubric",
-    "type": "JSON",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+Rubric.json?card%5Bname%5D=Center+for+Sustainable+Organizations%2BCumulative+CO2+Emissions+Context-Based+Absolute+Score%2BRubric"
-  },
-  "variables": {
-    "id": 12265023,
-    "name": "Center for Sustainable Organizations+Cumulative CO2 Emissions Context-Based Absolute Score+*variables",
-    "type": "JSON",
-    "url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+*variables.json",
-    "content": [
-      "Center for Sustainable Organizations+Cumulative CO2 Emissions",
-      "Center for Sustainable Organizations+Cumulative CO2 Emission Targets"
-    ]
-  },
-  "answers": 7,
+  "question": "Were the company's CO2 emissions within their \"allowance\" of global emissions (as determined by their value-added contribution to GDP)? The values for this metric are cumulative (i.e. reflect every year since 2005)",
+  "metric_type": "Formula",
+  "about": "<p>This metric is based on the [[http://www.sustainableorganizations.org/context-based-metrics-in-public-domain.html | Centre for Sustainable Organizations]] context-based carbon metric. It is still considered to be a work in progress.</p>",
+  "methodology": null,
+  "value_type": null,
+  "value_options": [],
+  "report_type": null,
+  "assessment": "Community Assessed",
+  "unit": null,
+  "range": null,
+  "hybrid": "no",
+  "topics": [
+    "Wikirate ESG Topics+Greenhouse Gas (GHG) Emissions",
+    "Wikirate ESG Topics+Climate Change Policy",
+    "Wikirate ESG Topics+Climate Targets & Transition Plans"
+  ],
+  "topic_frameworks": [],
+  "scores": [],
+  "formula": "(function() {\n  m1 / m2;\n\n}).call(this);\n",
+  "rubric": null,
+  "variables": [
+    {
+      "name": "m1",
+      "metric": "~984317"
+    },
+    {
+      "name": "m2",
+      "metric": "~984341"
+    }
+  ],
+  "answer": 7,
   "bookmarkers": 3,
   "datasets": 1,
   "companies": 1,
   "calculations": [],
   "answers_url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score+Answer.json",
-  "items": [],
-  "links": [],
-  "ancestors": [
-    {
-      "id": 944851,
-      "name": "Center for Sustainable Organizations",
-      "type": "Company",
-      "url": "https://wikirate.org/Center_for_Sustainable_Organizations.json"
-    },
-    {
-      "id": 984356,
-      "name": "Cumulative CO2 Emissions Context-Based Absolute Score",
-      "type": "Metric Title",
-      "url": "https://wikirate.org/Cumulative_CO2_Emissions_Context_Based_Absolute_Score.json"
-    }
-  ],
-  "html_url": "https://wikirate.org/Center_for_Sustainable_Organizations+Cumulative_CO2_Emissions_Context_Based_Absolute_Score",
-  "created_at": "2016-05-16 21:40:26 UTC",
-  "updated_at": "2022-03-01 19:38:11 UTC",
-  "requested_at": "2023-01-17 11:27:24 UTC"
+  "requested_at": "2025-12-18 21:08:55 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }
