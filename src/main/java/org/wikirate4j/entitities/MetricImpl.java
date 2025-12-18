@@ -5,6 +5,7 @@ import org.wikirate4j.utils.*;
 import org.wikirate4j.utils.AssessmentType;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -289,10 +290,8 @@ public class MetricImpl extends CardImpl implements Metric {
             return this;
         }
 
-        public Builder topics(List<String> topics) {
-            for (String topic: topics){
-                this.topics.add(WikirateTopic.getWikirateTopic(topic));
-            }
+        public Builder topics(List<WikirateTopic> topics) {
+            this.topics = topics;
             return this;
         }
 

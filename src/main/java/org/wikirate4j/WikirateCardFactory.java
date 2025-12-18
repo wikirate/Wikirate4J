@@ -5,6 +5,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.wikirate4j.entitities.*;
 import org.wikirate4j.exceptions.IncompatibleCardTypeException;
+import org.wikirate4j.utils.WikirateTopic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -94,7 +95,8 @@ public class WikirateCardFactory {
                 .value_options(getContentOfArray("value_options", json, String.class))
                 .report_type(getContentOf("report_type", json, String.class))
                 .assessment_type(getContentOf("assessment", json, String.class))
-                .topics(getContentOfArray("topics", json, String.class))
+                .topics(getContentOfArray("topics", json, WikirateTopic.class))
+                .topic_frameworks(getContentOfArray("topic_frameworks", json, String.class))
                 .formula(getContentOf("formula", json, String.class))
                 .variables(getContentOfArray("variables", json, String.class))
                 .calculations(getContentOfArray("calculations", json, String.class))
@@ -439,7 +441,7 @@ public class WikirateCardFactory {
                     try {
                         if (json.getJSONArray(field).get(i) instanceof String){
                             sources.add(new SourceReferenceImpl(json.getJSONArray(field).getString(i)));
-                        }else {
+                        } else {
                             sources.add(createSource(json.getJSONArray(field).getJSONObject(i).toString()));
                         }
                     } catch (IncompatibleCardTypeException e) {
@@ -447,7 +449,14 @@ public class WikirateCardFactory {
                     }
                 }
                 return (List<T>) sources;
-            } else if (classType.equals(Answer.class)) {
+            } else if (classType.equals(WikirateTopic.class)){
+                List<WikirateTopic> topics = new ArrayList<>();
+                for (int i = 0; i < json.getJSONArray(field).length(); i++) {
+                    topics.add(WikirateTopic.getWikirateTopic(json.getJSONArray(field).get(i).toString()));
+                }
+                return (List<T>) topics;
+            }
+            else if (classType.equals(Answer.class)) {
                 List<Answer> answers = new ArrayList<>();
                 for (int i = 0; i < json.getJSONArray(field).length(); i++) {
                     try {
