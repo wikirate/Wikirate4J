@@ -5,10 +5,10 @@ package org.wikirate4j.utils;
  */
 public enum TopicFramework {
 
-    WIKIRATE_ESG_TOPICS("Wikirate_ESG_Topics"),
-    GRI_STANDARDS("GRI_Standards"),
-    ESRS_STANDARDS("ESRS_Standards"),
-    UN_SDGs("UN_SDGs"),
+    WIKIRATE_ESG_TOPICS("Wikirate ESG Topics"),
+    GRI_STANDARDS("GRI Standards"),
+    ESRS_STANDARDS("ESRS Standards"),
+    UN_SDGs("UN SDGs"),
     UNKNOWN("");
 
     private final String value;
