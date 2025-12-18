@@ -140,19 +140,19 @@ public interface WikirateClient {
     List<RelationshipAnswer> getRelationshipAnswers(RelationshipAnswerQuery query);
 
     /**
-     * Adds a new Relationship Answer on WikiRate and returns its identifier
+     * Adds a new Relationship on WikiRate and returns its identifier
      *
      * @param answer
      * @return identifier
      */
-    long addRelationshipAnswer(RelationshipAnswerItem answer);
+    long addRelationship(RelationshipAnswerItem answer);
 
     /**
-     * Updates an existing Relationship Answer
+     * Updates an existing Relationship
      *
      * @param answer
      */
-    void updateRelationshipAnswer(RelationshipAnswerItem answer);
+    void updateRelationship(RelationshipAnswerItem answer);
 
     /**
      * Returns a {@link Dataset} based on its name

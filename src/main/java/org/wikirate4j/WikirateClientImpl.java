@@ -511,13 +511,13 @@ public class WikirateClientImpl implements WikirateClient {
     }
 
     @Override
-    public long addRelationshipAnswer(RelationshipAnswerItem answer) {
+    public long addRelationship(RelationshipAnswerItem answer) {
         try {
             HttpRequest request = new HttpRequestImpl.Builder(HOST)
                     .auth(username, password)
                     .addHeader("content-type", "application/json")
                     .addHeader("X-API-KEY", api_key)
-                    .addParameter("card[type]", "Relationship_Answer")
+                    .addParameter("card[type]", "Relationship")
                     .addParameter("card[name]", answer.getCardName())
                     .addParameter("card[subcards][+:value]", answer.getValue())
                     .addParameter("card[subcards][+:source]", answer.getSources())
@@ -542,13 +542,13 @@ public class WikirateClientImpl implements WikirateClient {
     }
 
     @Override
-    public void updateRelationshipAnswer(RelationshipAnswerItem answer) {
+    public void updateRelationship(RelationshipAnswerItem answer) {
         try {
             HttpRequest request = new HttpRequestImpl.Builder(HOST)
                     .auth(username, password)
                     .addHeader("content-type", "application/json")
                     .addHeader("X-API-KEY", api_key)
-                    .addParameter("card[type]", "Relationship_Answer")
+                    .addParameter("card[type]", "Relationship")
                     .addParameter("card[name]", answer.getCardName())
                     .addParameter("card[subcards][+:year]", answer.getYear() == null ? null: String.valueOf(answer.getYear()))
                     .addParameter("card[subcards][+:value]", answer.getValue())
