@@ -1,13 +1,11 @@
 package org.wikirate4j.utils;
 
 import org.apache.hc.client5.http.auth.AuthScope;
-import org.apache.hc.client5.http.auth.AuthenticationException;
 import org.apache.hc.client5.http.auth.UsernamePasswordCredentials;
 import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.classic.methods.HttpPost;
 import org.apache.hc.client5.http.config.RequestConfig;
 import org.apache.hc.client5.http.impl.auth.BasicCredentialsProvider;
-import org.apache.hc.client5.http.impl.auth.BasicScheme;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
 import org.apache.hc.client5.http.impl.classic.HttpClients;
@@ -145,7 +143,7 @@ public class HttpRequestImpl implements HttpRequest {
          * @return
          * @throws IOException
          * @throws URISyntaxException
-         * @throws AuthenticationException
+         * @throws ParseException
          * @throws HTTPException
          */
         public HttpRequest GET() throws IOException, URISyntaxException, HTTPException, ParseException {
@@ -207,7 +205,7 @@ public class HttpRequestImpl implements HttpRequest {
              * @return
              * @throws IOException
              * @throws URISyntaxException
-             * @throws AuthenticationException
+             * @throws ParseException
              * @throws HTTPException
              */
             public HttpRequest POST() throws IOException, URISyntaxException, HTTPException, ParseException {
