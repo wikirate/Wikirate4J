@@ -36,10 +36,16 @@ public class WikirateCardFactory {
                     .name(json.getString("name"))
                     .headquarters(getContentOfArray("headquarters", json, String.class) != null ? getContentOfArray("headquarters", json, String.class).get(0) : null)
                     .aliases(getContentOfArray("alias", json, String.class))
-                    .open_corporates(getContentOf("open_corporates", json, String.class))
+                    .open_corporates_id(getContentOf("open_corporates_id", json, String.class))
                     .wikipedia(getContentOf("wikipedia", json, String.class))
-                    .cik(getContentOf("sec_cik", json, String.class))
-                    .os_id(getContentOf("oar_id", json, String.class))
+                    .sec_cik(getContentOf("sec_central_index_key", json, String.class))
+                    .os_id(getContentOf("open_supply_id", json, String.class))
+                    .lei(getContentOf("legal_entity_identifier", json, String.class))
+                    .isin(getContentOfArray("international_securities_identification_number", json, String.class))
+                    .australian_business_number(getContentOf("australian_business_number", json, String.class))
+                    .australian_company_number(getContentOf("australian_company_number", json, String.class))
+                    .uk_company_number(getContentOf("uk_company_number", json, String.class))
+                    .wikidata_id(getContentOf("wikidata_id", json, String.class))
                     .url(getContentOf("url", json, String.class))
                     .updated_at(getContentOf("updated_at", json, String.class))
                     .created_at(getContentOf("created_at", json, String.class))
@@ -54,10 +60,16 @@ public class WikirateCardFactory {
                     .name(json.getString("name"))
                     .headquarters(getContentOf("headquarters", json, String.class))
                     .aliases(getContentOfArray("alias", json, String.class))
-                    .open_corporates(getContentOf("open_corporates", json, String.class))
+                    .open_corporates_id(getContentOf("open_corporates_id", json, String.class))
                     .wikipedia(getContentOf("wikipedia", json, String.class))
-                    .cik(getContentOf("sec_cik", json, String.class))
-                    .os_id(getContentOf("oar_id", json, String.class))
+                    .sec_cik(getContentOf("sec_central_index_key", json, String.class))
+                    .os_id(getContentOf("open_supply_id", json, String.class))
+                    .lei(getContentOf("legal_entity_identifier", json, String.class))
+                    .isin(getContentOfArray("international_securities_identification_number", json, String.class))
+                    .australian_business_number(getContentOf("australian_business_number", json, String.class))
+                    .australian_company_number(getContentOf("australian_company_number", json, String.class))
+                    .uk_company_number(getContentOf("uk_company_number", json, String.class))
+                    .wikidata_id(getContentOf("wikidata_id", json, String.class))
                     .url(getContentOf("url", json, String.class))
                     .updated_at(getContentOf("updated_at", json, String.class))
                     .created_at(getContentOf("created_at", json, String.class))
@@ -508,8 +520,12 @@ public class WikirateCardFactory {
                 }
             } else if (classType.equals(Long.class)) {
                 return json.getJSONObject(field).isNull("content") ? null : classType.cast(json.getJSONObject(field).getLong("content"));
-            } else
-                return json.getJSONObject(field).isNull("content") ? null : classType.cast(json.getJSONObject(field).get("content"));
+            } else {
+                if (json.getJSONObject(field).get("content") instanceof JSONArray)
+                    return json.getJSONObject(field).isNull("content") ? null : classType.cast(json.getJSONObject(field).getJSONArray("content").get(0));
+                else
+                    return json.getJSONObject(field).isNull("content") ? null : classType.cast(json.getJSONObject(field).get("content"));
+            }
         if (classType.equals(Long.class)) {
             return classType.cast(json.getLong(field));
         }
