@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 /**
  * @author Vasiliki Gkatziaki
  */
-public class RelationshipAnswerImpl extends CardImpl implements RelationshipAnswer {
+public class RelationshipImpl extends CardImpl implements Relationship {
 
     Long metric_id;
 
@@ -36,7 +36,7 @@ public class RelationshipAnswerImpl extends CardImpl implements RelationshipAnsw
 
     CheckedBy checkedBy;
 
-    private RelationshipAnswerImpl(Builder builder) {
+    private RelationshipImpl(Builder builder) {
         super(builder);
         this.metric_id = builder.metric_id;
         this.inverse_metric_id = builder.inverse_metric_id;
@@ -216,8 +216,8 @@ public class RelationshipAnswerImpl extends CardImpl implements RelationshipAnsw
             return this;
         }
 
-        public RelationshipAnswer build() {
-            return new RelationshipAnswerImpl(this);
+        public Relationship build() {
+            return new RelationshipImpl(this);
         }
     }
 

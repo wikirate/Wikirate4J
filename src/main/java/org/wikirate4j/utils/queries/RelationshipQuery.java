@@ -6,89 +6,93 @@ import org.wikirate4j.utils.*;
  * Class used to build a Relationship Answer Query
  * @author Vasiliki Gkatziaki
  */
-public class RelationshipAnswerQuery extends Query<RelationshipAnswerQuery> {
+public class RelationshipQuery extends Query<RelationshipQuery> {
 
     String metric_name;
     String metric_designer;
     Long metric_id;
 
-    public RelationshipAnswerQuery(String metric_name, String metric_designer) {
+    public RelationshipQuery() {
+        super();
+    }
+
+    public RelationshipQuery(String metric_name, String metric_designer) {
         super();
         this.metric_name = metric_name;
         this.metric_designer = metric_designer;
     }
 
-    public RelationshipAnswerQuery(long metric_id) {
+    public RelationshipQuery(long metric_id) {
         super();
         this.metric_id = metric_id;
     }
 
-    public RelationshipAnswerQuery subject_company_name(String name) {
+    public RelationshipQuery subject_company_name(String name) {
         super.filters.add(new BasicNameValuePair("filter[subject_company_name]", name));
         return this;
     }
 
-    public RelationshipAnswerQuery object_company_name(String name) {
+    public RelationshipQuery object_company_name(String name) {
         super.filters.add(new BasicNameValuePair("filter[object_company_name]", name));
         return this;
     }
 
-    public RelationshipAnswerQuery subject_company_id(long subject_company_id) {
+    public RelationshipQuery subject_company_id(long subject_company_id) {
         super.filters.add(new BasicNameValuePair("filter[subject_company_id]", String.valueOf(subject_company_id)));
         return this;
     }
 
-    public RelationshipAnswerQuery object_company_id(long object_company_id) {
+    public RelationshipQuery object_company_id(long object_company_id) {
         super.filters.add(new BasicNameValuePair("filter[object_company_id]", String.valueOf(object_company_id)));
         return this;
     }
 
-    public RelationshipAnswerQuery value(String value) {
+    public RelationshipQuery value(String value) {
         super.filters.add(new BasicNameValuePair("filter[value]", value));
         return this;
     }
 
-    public RelationshipAnswerQuery dataset(String dataset) {
+    public RelationshipQuery dataset(String dataset) {
         super.filters.add(new BasicNameValuePair("filter[dataset][]", dataset));
         return this;
     }
 
-    public RelationshipAnswerQuery verification_status(VerificationStatus verificationStatus) {
+    public RelationshipQuery verification_status(VerificationStatus verificationStatus) {
         super.filters.add(new BasicNameValuePair("filter[verification]", String.valueOf(verificationStatus.value())));
         return this;
     }
 
-    public RelationshipAnswerQuery status(AnswerStatus status) {
+    public RelationshipQuery status(AnswerStatus status) {
         super.filters.add(new BasicNameValuePair("filter[status]", String.valueOf(status.value())));
         return this;
     }
 
-    public RelationshipAnswerQuery updated(Updated updated) {
+    public RelationshipQuery updated(Updated updated) {
         super.filters.add(new BasicNameValuePair("filter[updated]", String.valueOf(updated.value())));
         return this;
     }
 
-    public RelationshipAnswerQuery updater(Updater updater) {
+    public RelationshipQuery updater(Updater updater) {
         super.filters.add(new BasicNameValuePair("filter[updater]", String.valueOf(updater.value())));
         return this;
     }
 
-    public RelationshipAnswerQuery source(String source) {
+    public RelationshipQuery source(String source) {
         super.filters.add(new BasicNameValuePair("filter[source]", String.valueOf(source)));
         return this;
     }
 
-    public RelationshipAnswerQuery publication_status(PublicationStatus publicationStatus) {
+    public RelationshipQuery publication_status(PublicationStatus publicationStatus) {
         super.filters.add(new BasicNameValuePair("filter[published]", publicationStatus.value()));
         return this;
     }
 
-    public RelationshipAnswerQuery year(int year) {
+    public RelationshipQuery year(int year) {
         super.filters.add(new BasicNameValuePair("filter[year][]", String.valueOf(year)));
         return this;
     }
 
-    public RelationshipAnswerQuery year(String year) {
+    public RelationshipQuery year(String year) {
         super.filters.add(new BasicNameValuePair("filter[year]", year));
         return this;
     }

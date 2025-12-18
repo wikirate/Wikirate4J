@@ -5,12 +5,12 @@ import org.wikirate4j.utils.StringUtils;
 import java.util.List;
 
 /**
- * The RelationshipAnswerItem Object represents a relationship answer on a relationship metric type. This object is
+ * The RelationshipItem Object represents a relationship answer on a relationship metric type. This object is
  * used when we want to add/update a relationship answer on Wikirate
  *
  * @author Vasiliki Gkatziaki
  */
-public class RelationshipAnswerItem {
+public class RelationshipItem {
 
     Integer year;
 
@@ -22,15 +22,15 @@ public class RelationshipAnswerItem {
 
     String comment;
 
-    public RelationshipAnswerItem(long answer_id) {
+    public RelationshipItem(long answer_id) {
         this.card_name = "~" + answer_id;
     }
 
-    public RelationshipAnswerItem(String metric_name, String metric_designer, String subject_company, String object_company, int year) {
+    public RelationshipItem(String metric_name, String metric_designer, String subject_company, String object_company, int year) {
         this.card_name = metric_designer + "+" + metric_name + "+" + StringUtils.transformToWikiRateFriendlyName(subject_company) + "+" + year + "+" + StringUtils.transformToWikiRateFriendlyName(object_company);
     }
 
-    public RelationshipAnswerItem(long metric_id, long subject_company_id, long object_company_id, int year) {
+    public RelationshipItem(long metric_id, long subject_company_id, long object_company_id, int year) {
         this.card_name = "~" + metric_id + "+~" + subject_company_id + "+" + year + "+~" + object_company_id;
     }
 
@@ -54,12 +54,12 @@ public class RelationshipAnswerItem {
         return comment;
     }
 
-    public RelationshipAnswerItem year(int year) {
+    public RelationshipItem year(int year) {
         this.year = year;
         return this;
     }
 
-    public RelationshipAnswerItem value(Object value) {
+    public RelationshipItem value(Object value) {
         this.value = "";
         if (value instanceof List) {
             for (Object value_item : (List) value) {
@@ -71,12 +71,12 @@ public class RelationshipAnswerItem {
         return this;
     }
 
-    public RelationshipAnswerItem source(String source) {
+    public RelationshipItem source(String source) {
         this.sources = source;
         return this;
     }
 
-    public RelationshipAnswerItem sources(List<String> sources) {
+    public RelationshipItem sources(List<String> sources) {
         this.sources = "";
         for (String source_item : sources) {
             this.sources += source_item + "\n";
@@ -84,7 +84,7 @@ public class RelationshipAnswerItem {
         return this;
     }
 
-    public RelationshipAnswerItem comment(String comment) {
+    public RelationshipItem comment(String comment) {
         this.comment = comment;
         return this;
     }

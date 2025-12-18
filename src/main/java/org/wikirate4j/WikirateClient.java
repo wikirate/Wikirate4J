@@ -116,28 +116,28 @@ public interface WikirateClient {
     void updateAnswer(AnswerItem answer);
 
     /**
-     * Returns a {@link RelationshipAnswer} on WikiRate based on its name
+     * Returns a {@link Relationship} on WikiRate based on its name
      *
      * @param name
      * @return
      */
-    RelationshipAnswer getRelationshipAnswer(String name);
+    Relationship getRelationship(String name);
 
     /**
-     * Returns a {@link RelationshipAnswer} on WikiRate based on its identifier
+     * Returns a {@link Relationship} on WikiRate based on its identifier
      *
      * @param id
      * @return
      */
-    RelationshipAnswer getRelationshipAnswer(long id);
+    Relationship getRelationship(long id);
 
     /**
-     * Returns a List of Relationship Answers based on a given query
+     * Returns a List of Relationship based on a given query
      *
      * @param query
      * @return
      */
-    List<RelationshipAnswer> getRelationshipAnswers(RelationshipAnswerQuery query);
+    List<Relationship> getRelationships(RelationshipQuery query);
 
     /**
      * Adds a new Relationship on WikiRate and returns its identifier
@@ -145,14 +145,14 @@ public interface WikirateClient {
      * @param answer
      * @return identifier
      */
-    long addRelationship(RelationshipAnswerItem answer);
+    long addRelationship(RelationshipItem answer);
 
     /**
      * Updates an existing Relationship
      *
      * @param answer
      */
-    void updateRelationship(RelationshipAnswerItem answer);
+    void updateRelationship(RelationshipItem answer);
 
     /**
      * Returns a {@link Dataset} based on its name

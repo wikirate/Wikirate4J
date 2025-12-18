@@ -3,14 +3,14 @@ package org.wikirate4j.entitities;
 import java.util.List;
 
 /**
- * Relationship Metric are a special type of metrics that produce special type of Relationship Answers. They have been
- * created to demonstrate the relationship between two companies. Thus, the RelationshipAnswer Object represent the
+ * Relation Metrics are a special type of metrics that produce special type of Relationship. They have been
+ * created to demonstrate the relationship between two companies. Thus, the Relationship Object represent the
  * answer on a question ({@link Metric}) on a relationship between two companies on a specific year. The
- * RelationshipAnswer entity extends the notion of a {@link Card} to provide additional information and functionality.
+ * Relationship entity extends the notion of a {@link Card} to provide additional information and functionality.
  *
  * @author Vasiliki Gkatziaki
  */
-public interface RelationshipAnswer extends Card {
+public interface Relationship extends Card {
 
     /**
      * The metric identifier the answer refers to

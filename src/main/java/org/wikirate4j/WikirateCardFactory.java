@@ -314,19 +314,19 @@ public class WikirateCardFactory {
     }
 
     /**
-     * Creates a {@link RelationshipAnswer} given the raw json response from the api request
+     * Creates a {@link Relationship} given the raw json response from the api request
      * @param rawJson
      * @return
      * @throws IncompatibleCardTypeException in case a different Card type is returned
      */
-    public static RelationshipAnswer createRelationshipAnswer(String rawJson) throws IncompatibleCardTypeException {
+    public static Relationship createRelationship(String rawJson) throws IncompatibleCardTypeException {
         JSONObject json = new JSONObject(rawJson);
         String card_type = getCardType(json);
 
-        if (!card_type.equals("Relationship Answer"))
-            throw new IncompatibleCardTypeException("The requested Card is not a Relationship Answer but a " + card_type);
+        if (!card_type.equals("Relationship"))
+            throw new IncompatibleCardTypeException("The requested Card is not a Relationship but a " + card_type);
 
-        return new RelationshipAnswerImpl.Builder()
+        return new RelationshipImpl.Builder()
                 .id(json.getLong("id"))
                 .name(getContentOf("name", json, String.class))
                 .url(getContentOf("url", json, String.class))

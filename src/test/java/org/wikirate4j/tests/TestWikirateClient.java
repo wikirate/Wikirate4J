@@ -84,11 +84,11 @@ public class TestWikirateClient {
     }
 
     @Test
-    public void TestGetRelationshipAnswers() {
-        List<RelationshipAnswer> answers = client.getRelationshipAnswers(new RelationshipAnswerQuery(2929009L));
+    public void TestGetRelationships() {
+        List<Relationship> answers = client.getRelationships(new RelationshipQuery(2929009L));
         assertTrue(answers.size() > 0);
 
-        RelationshipAnswer answer = client.getRelationshipAnswer(answers.get(0).getId());
+        Relationship answer = client.getRelationship(answers.get(0).getId());
         assertNotNull(answer);
     }
 

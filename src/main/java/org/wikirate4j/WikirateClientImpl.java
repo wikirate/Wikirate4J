@@ -402,7 +402,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .addHeader("X-API-KEY", api_key)
                     .addParameter("card[type]", "Answer")
                     .addParameter("card[name]", answer.getCardName())
-                    .addParameter("card[subcards][+:year]", answer.getYear() == null ? null: String.valueOf(answer.getYear()))
+                    .addParameter("card[subcards][+:year]", answer.getYear() == null ? null : String.valueOf(answer.getYear()))
                     .addParameter("card[subcards][+:value]", answer.getValue())
                     .addParameter("card[subcards][+:source]", answer.getSources())
                     .addParameter("card[subcards][+:discussion]", answer.getComment())
@@ -423,7 +423,7 @@ public class WikirateClientImpl implements WikirateClient {
     }
 
     @Override
-    public RelationshipAnswer getRelationshipAnswer(String name) {
+    public Relationship getRelationship(String name) {
         try {
             HttpRequest request = new HttpRequestImpl.Builder(HOST)
                     .auth(username, password)
@@ -432,7 +432,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .endpoint(name + ".json")
                     .GET();
 
-            return WikirateCardFactory.createRelationshipAnswer(request.getResponse());
+            return WikirateCardFactory.createRelationship(request.getResponse());
         } catch (IOException e) {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
@@ -447,7 +447,7 @@ public class WikirateClientImpl implements WikirateClient {
     }
 
     @Override
-    public RelationshipAnswer getRelationshipAnswer(long id) {
+    public Relationship getRelationship(long id) {
         try {
             HttpRequest request = new HttpRequestImpl.Builder(HOST)
                     .auth(username, password)
@@ -456,7 +456,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .endpoint("~" + id + ".json")
                     .GET();
 
-            return WikirateCardFactory.createRelationshipAnswer(request.getResponse());
+            return WikirateCardFactory.createRelationship(request.getResponse());
         } catch (IOException e) {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
@@ -471,18 +471,15 @@ public class WikirateClientImpl implements WikirateClient {
     }
 
     @Override
-    public List<RelationshipAnswer> getRelationshipAnswers(RelationshipAnswerQuery query) {
+    public List<Relationship> getRelationships(RelationshipQuery query) {
         try {
-            String endpoint = "Relationship_Answers";
-            if (query instanceof RelationshipAnswerQuery) {
-                RelationshipAnswerQuery relationshipAnswerQuery = (RelationshipAnswerQuery) query;
-                if (relationshipAnswerQuery.getMetricId() != null) {
-                    endpoint = "~" + relationshipAnswerQuery.getMetricId() + "+" + endpoint;
-                } else {
-                    endpoint = relationshipAnswerQuery.getMetricDesigner() + "+" + relationshipAnswerQuery.getMetricName() + "+" + endpoint;
-                }
+            String endpoint = "Relationships";
+            if (query.getMetricId() != null) {
+                endpoint = "~" + query.getMetricId() + "+" + endpoint;
+            } else if (query.getMetricDesigner() != null){
+                endpoint = query.getMetricDesigner() + "+" + query.getMetricName() + "+" + endpoint;
             }
-            List<RelationshipAnswer> answers = new ArrayList<>();
+            List<Relationship> answers = new ArrayList<>();
             HttpRequest request = new HttpRequestImpl.Builder(HOST)
                     .auth(username, password)
                     .addHeader("content-type", "application/json")
@@ -494,7 +491,7 @@ public class WikirateClientImpl implements WikirateClient {
 
             JSONArray items = request.getJSONResponse().getJSONArray("items");
             for (int i = 0; i < items.length(); i++) {
-                answers.add(WikirateCardFactory.createRelationshipAnswer(items.getJSONObject(i).toString()));
+                answers.add(WikirateCardFactory.createRelationship(items.getJSONObject(i).toString()));
             }
             return answers;
         } catch (IOException e) {
@@ -511,7 +508,7 @@ public class WikirateClientImpl implements WikirateClient {
     }
 
     @Override
-    public long addRelationship(RelationshipAnswerItem answer) {
+    public long addRelationship(RelationshipItem answer) {
         try {
             HttpRequest request = new HttpRequestImpl.Builder(HOST)
                     .auth(username, password)
@@ -527,7 +524,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .endpoint("/card/create")
                     .POST();
 
-            return WikirateCardFactory.createRelationshipAnswer(request.getResponse()).getId();
+            return WikirateCardFactory.createRelationship(request.getResponse()).getId();
         } catch (IOException e) {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
@@ -542,7 +539,7 @@ public class WikirateClientImpl implements WikirateClient {
     }
 
     @Override
-    public void updateRelationship(RelationshipAnswerItem answer) {
+    public void updateRelationship(RelationshipItem answer) {
         try {
             HttpRequest request = new HttpRequestImpl.Builder(HOST)
                     .auth(username, password)
@@ -550,7 +547,7 @@ public class WikirateClientImpl implements WikirateClient {
                     .addHeader("X-API-KEY", api_key)
                     .addParameter("card[type]", "Relationship")
                     .addParameter("card[name]", answer.getCardName())
-                    .addParameter("card[subcards][+:year]", answer.getYear() == null ? null: String.valueOf(answer.getYear()))
+                    .addParameter("card[subcards][+:year]", answer.getYear() == null ? null : String.valueOf(answer.getYear()))
                     .addParameter("card[subcards][+:value]", answer.getValue())
                     .addParameter("card[subcards][+:source]", answer.getSources())
                     .addParameter("card[subcards][+:discussion]", answer.getComment())
