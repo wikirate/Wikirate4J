@@ -1,6 +1,6 @@
 package org.wikirate4j;
 
-import org.apache.http.auth.AuthenticationException;
+import org.apache.hc.core5.http.ParseException;
 import org.json.JSONArray;
 import org.wikirate4j.entitities.*;
 import org.wikirate4j.exceptions.HTTPException;
@@ -52,9 +52,9 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
-            throw new RuntimeException(e);
         } catch (HTTPException e) {
+            throw new RuntimeException(e);
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         }
     }
@@ -76,7 +76,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -117,7 +117,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -157,7 +157,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -188,11 +188,11 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
-            throw new RuntimeException(e);
-        } catch (IncompatibleCardTypeException e) {
+        }  catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
+            throw new RuntimeException(e);
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         }
     }
@@ -221,9 +221,9 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
-            throw new RuntimeException(e);
         } catch (HTTPException e) {
+            throw new RuntimeException(e);
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         }
     }
@@ -245,9 +245,9 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
-            throw new RuntimeException(e);
         } catch (HTTPException e) {
+            throw new RuntimeException(e);
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         }
     }
@@ -269,9 +269,9 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        }  catch (HTTPException e) {
             throw new RuntimeException(e);
-        } catch (HTTPException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         }
     }
@@ -300,9 +300,9 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
-            throw new RuntimeException(e);
         } catch (HTTPException e) {
+            throw new RuntimeException(e);
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         }
     }
@@ -324,9 +324,9 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        }  catch (HTTPException e) {
             throw new RuntimeException(e);
-        } catch (HTTPException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         }
     }
@@ -355,9 +355,9 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        }  catch (HTTPException e) {
             throw new RuntimeException(e);
-        } catch (HTTPException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         }
     }
@@ -386,7 +386,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -415,7 +415,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -439,7 +439,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -463,7 +463,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -500,7 +500,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -531,7 +531,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -559,7 +559,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -583,7 +583,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -607,7 +607,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -639,7 +639,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -663,7 +663,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -687,7 +687,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -718,7 +718,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -742,7 +742,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -766,7 +766,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -799,7 +799,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -830,7 +830,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -861,7 +861,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -885,7 +885,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -909,7 +909,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -940,7 +940,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -969,7 +969,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -999,7 +999,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -1023,7 +1023,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -1047,7 +1047,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -1078,7 +1078,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -1102,7 +1102,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -1126,7 +1126,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -1157,7 +1157,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -1181,7 +1181,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -1205,7 +1205,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -1234,7 +1234,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -1256,7 +1256,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);
@@ -1278,7 +1278,7 @@ public class WikirateClientImpl implements WikirateClient {
             throw new RuntimeException(e);
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
-        } catch (AuthenticationException e) {
+        } catch (ParseException e) {
             throw new RuntimeException(e);
         } catch (HTTPException e) {
             throw new RuntimeException(e);

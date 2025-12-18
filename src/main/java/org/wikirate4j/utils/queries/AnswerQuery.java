@@ -1,6 +1,7 @@
 package org.wikirate4j.utils.queries;
 
-import org.apache.http.message.BasicNameValuePair;
+
+import org.apache.hc.core5.http.message.BasicNameValuePair;
 import org.wikirate4j.utils.*;
 
 /**
