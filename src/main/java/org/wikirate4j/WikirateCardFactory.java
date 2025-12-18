@@ -207,7 +207,7 @@ public class WikirateCardFactory {
         JSONObject json = new JSONObject(rawJson);
         String card_type = getCardType(json);
 
-        if (!card_type.equals("Data Set"))
+        if (!card_type.equals("Dataset"))
             throw new IncompatibleCardTypeException("The requested Card is not a Data Set but a " + card_type);
 
         return new DatasetImpl.Builder()
@@ -521,10 +521,12 @@ public class WikirateCardFactory {
             } else if (classType.equals(Long.class)) {
                 return json.getJSONObject(field).isNull("content") ? null : classType.cast(json.getJSONObject(field).getLong("content"));
             } else {
-                if (json.getJSONObject(field).get("content") instanceof JSONArray)
-                    return json.getJSONObject(field).isNull("content") ? null : classType.cast(json.getJSONObject(field).getJSONArray("content").get(0));
+                if (json.getJSONObject(field).isNull("content"))
+                    return null;
+                else if(json.getJSONObject(field).get("content") instanceof JSONArray)
+                    return classType.cast(json.getJSONObject(field).getJSONArray("content").get(0));
                 else
-                    return json.getJSONObject(field).isNull("content") ? null : classType.cast(json.getJSONObject(field).get("content"));
+                    return classType.cast(json.getJSONObject(field).get("content"));
             }
         if (classType.equals(Long.class)) {
             return classType.cast(json.getLong(field));
