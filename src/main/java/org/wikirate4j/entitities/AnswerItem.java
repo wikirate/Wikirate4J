@@ -62,9 +62,7 @@ public class AnswerItem {
     public AnswerItem value(Object value) {
         this.value = "";
         if (value instanceof List) {
-            for (Object value_item : (List) value) {
-                this.value += value_item + "\n";
-            }
+            this.value += String.join("\n", (List<String>) value);
         } else {
             this.value = String.valueOf(value);
         }

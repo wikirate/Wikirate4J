@@ -5,8 +5,7 @@ package org.wikirate4j.utils;
  */
 public enum VerificationStatus {
     FLAGGED("flagged"),
-    UNVERIFIED_ADDED_BY_COMMUNITY("community_added"),
-    UNVERIFIED_ADDED_BY_STEWARD("steward_added"),
+    UNVERIFIED("unverified"),
     VERIFIED_BY_COMMUNITY("community_verified"),
     VERIFIED_BY_STEWARD("steward_verified"),
     VERIFIED_BY_ME("current_user"),

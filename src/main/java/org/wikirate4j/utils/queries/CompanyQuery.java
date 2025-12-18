@@ -1,6 +1,6 @@
 package org.wikirate4j.utils.queries;
 
-import org.apache.http.message.BasicNameValuePair;
+import org.apache.hc.core5.http.message.BasicNameValuePair;
 import org.wikirate4j.utils.CompanyCategory;
 import org.wikirate4j.utils.Country;
 /**
@@ -26,6 +26,11 @@ public class CompanyQuery extends Query<CompanyQuery> {
 
     public CompanyQuery company_group(String company_group) {
         super.filters.add(new BasicNameValuePair("filter[company_group][]", company_group));
+        return this;
+    }
+
+    public CompanyQuery company_identifier(String company_identifier) {
+        super.filters.add(new BasicNameValuePair("filter[company_identifier][]", company_identifier));
         return this;
     }
 

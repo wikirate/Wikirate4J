@@ -1,24 +1,41 @@
 {
-  "id": 13336870,
+  "id": 21778717,
   "name": "Business & Human Rights Resource Centre+Modern Slavery Statement+HYUNDAI MOTOR COMPANY AUSTRALIA PTY LIMITED+2023",
   "type": {
     "id": 43678,
     "name": "Answer",
     "type": "Cardtype",
     "url": "https://wikirate.org/Answer.json",
-    "codename": "metric_answer"
+    "codename": "answer"
   },
-  "url": "https://wikirate.org/Business_Human_Rights_Resource_Centre+Modern_Slavery_Statement+HYUNDAI_MOTOR_COMPANY_AUSTRALIA_PTY_LIMITED+2023.json",
+  "url": "https://wikirate.org/Business%20&%20Human%20Rights%20Resource%20Centre+Modern%20Slavery%20Statement+HYUNDAI%20MOTOR%20COMPANY%20AUSTRALIA%20PTY%20LIMITED+2023.json",
   "metric": "Business & Human Rights Resource Centre+Modern Slavery Statement",
   "company": "HYUNDAI MOTOR COMPANY AUSTRALIA PTY LIMITED",
   "year": 2023,
   "value": "Yes - Australian Modern Slavery Act",
-  "comments": null,
-  "record_url": "https://wikirate.org/Business_Human_Rights_Resource_Centre+Modern_Slavery_Statement+HYUNDAI_MOTOR_COMPANY_AUSTRALIA_PTY_LIMITED.json",
-  "items": [
+  "sources": [
+    {
+      "id": 21731329,
+      "name": "Source-000227063",
+      "type": "Source",
+      "url": "https://wikirate.org/Source_000227063.json",
+      "file": "https://wikirate-production-storage.fra1.cdn.digitaloceanspaces.com/files/21731334/51380219.pdf",
+      "link": "https://modernslaveryregister.gov.au/statements/fTFSLx9iECYOEmo/pdf/",
+      "report_type": [
+        "Modern Slavery Statement",
+        "German Supply Chain Act report (Bericht zum LksG)",
+        "Vigilance plan (Devoir de Vigilance)",
+        "Norwegian Transparency Act report"
+      ],
+      "title": "HYUNDAI MOTOR COMPANY AUSTRALIA PTY LIMITED (58 008 995 588) Modern Slavery Statement for 2023",
+      "year": [
+        "2023"
+      ]
+    }
   ],
-  "links": [
-  ],
+  "answer_url": "https://wikirate.org/Business_Human_Rights_Resource_Centre+Modern_Slavery_Statement+HYUNDAI_MOTOR_COMPANY_AUSTRALIA_PTY_LIMITED.json",
+  "items": [],
+  "links": [],
   "ancestors": [
     {
       "id": 1827649,
@@ -58,33 +75,9 @@
     }
   ],
   "html_url": "https://wikirate.org/Business_Human_Rights_Resource_Centre+Modern_Slavery_Statement+HYUNDAI_MOTOR_COMPANY_AUSTRALIA_PTY_LIMITED+2023",
-  "created_at": "2022-08-26 10:08:35 UTC",
-  "updated_at": "2022-08-26 10:08:35 UTC",
-  "sources": [
-    {
-      "id": 13322672,
-      "name": "Source-000165540",
-      "type": "Source",
-      "url": "https://wikirate.org/Source_000165540.json",
-      "file": "https://dq06ugkuram52.cloudfront.net/files/13322712/33986279.pdf",
-      "link": "https://modernslaveryregister.gov.au/statements/file/fc0e1211-d1ab-445b-8715-23979fee86e0/",
-      "report_type": [
-        "Modern Slavery Statement"
-      ],
-      "title": "HYUNDAI MOTOR COMPANY AUSTRALIA PTY LIMITED Modern Slavery Statement for 2023",
-      "year": [
-        "2023"
-      ]
-    }
-  ],
-  "checked_by": {
-    "id": null,
-    "name": "Business & Human Rights Resource Centre+Modern Slavery Statement+HYUNDAI MOTOR COMPANY AUSTRALIA PTY LIMITED+2023+checked by",
-    "type": "List",
-    "url": "https://wikirate.org/Business_Human_Rights_Resource_Centre+Modern_Slavery_Statement+HYUNDAI_MOTOR_COMPANY_AUSTRALIA_PTY_LIMITED+2023+checked_by.json",
-    "content": [
-    ],
-    "checks": 0
-  },
-  "requested_at": "2023-01-17 13:52:28 UTC"
+  "created_at": "2025-07-07 13:33:12 UTC",
+  "updated_at": "2025-07-07 13:33:12 UTC",
+  "checked_by": [],
+  "requested_at": "2025-12-18 21:01:15 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

@@ -8,7 +8,7 @@
     "url": "https://wikirate.org/Metric.json",
     "codename": "metric"
   },
-  "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers.json",
+  "url": "https://wikirate.org/Clean%20Clothes%20Campaign+Quantity%20of%20Tier%202%20Suppliers.json",
   "designer": "Clean Clothes Campaign",
   "title": "Quantity of Tier 2 Suppliers",
   "question": {
@@ -57,11 +57,11 @@
     "type": "List",
     "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Report_Type.json"
   },
-  "research_policy": {
+  "assessment": {
     "id": 5781971,
-    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+Research Policy",
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+Assessment",
     "type": "Pointer",
-    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Research_Policy.json",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Assessment.json",
     "content": "Community Assessed"
   },
   "unit": {
@@ -85,16 +85,17 @@
     "content": "0"
   },
   "topics": {
-    "id": 5781967,
+    "id": 21494092,
     "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+Topic",
-    "type": "Pointer",
+    "type": "List",
     "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Topic.json",
-    "content": [
-      "Filling the Gap",
-      "Filling the Gap: Brand Survey",
-      "Suppliers",
-      "Supply Chain Transparency"
-    ]
+    "content": []
+  },
+  "topic_frameworks": {
+    "id": null,
+    "name": "Clean Clothes Campaign+Quantity of Tier 2 Suppliers+Topic Framework",
+    "type": "List",
+    "url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers+Topic_Framework.json"
   },
   "scores": {
     "id": null,
@@ -124,7 +125,7 @@
       "Clean Clothes Campaign+Number of Tier 2 Suppliers in Supplier List"
     ]
   },
-  "answers": 118,
+  "answer": 118,
   "bookmarkers": 1,
   "datasets": 0,
   "companies": 110,
@@ -149,5 +150,6 @@
   "html_url": "https://wikirate.org/Clean_Clothes_Campaign+Quantity_of_Tier_2_Suppliers",
   "created_at": "2020-04-16 14:10:55 UTC",
   "updated_at": "2020-11-25 15:16:41 UTC",
-  "requested_at": "2023-01-18 12:17:25 UTC"
+  "requested_at": "2025-12-18 21:08:09 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

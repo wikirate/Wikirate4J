@@ -59,7 +59,7 @@ public class TestWikirateCardFactory {
         //detailed inverse relationship metric
         File inverse_relationship = new File(classLoader.getResource("InverseRelationshipMetric.json").getFile());
         //detailed wikirating
-        File wikirating = new File(classLoader.getResource("WikiRating.json").getFile());
+        File wikirating = new File(classLoader.getResource("Rating.json").getFile());
         //detailed score metric
         File score = new File(classLoader.getResource("ScoreMetric.json").getFile());
         //detailed descendant metric
@@ -74,7 +74,7 @@ public class TestWikirateCardFactory {
         //Summarized inverse relationship metric
         File inverse_relationship_item = new File(classLoader.getResource("InverseRelationshipMetricItem.json").getFile());
         //Summarized wikirating
-        File wikirating_item = new File(classLoader.getResource("WikiRatingItem.json").getFile());
+        File wikirating_item = new File(classLoader.getResource("RatingItem.json").getFile());
         //Summarized score metric
         File score_item = new File(classLoader.getResource("ScoreMetricItem.json").getFile());
         //Summarized descendant metric
@@ -188,20 +188,20 @@ public class TestWikirateCardFactory {
     }
 
     /**
-     * Tests if the WikirateCardFactory is able to create a {@link RelationshipAnswer} Object either when the detailed or the summarized
+     * Tests if the WikirateCardFactory is able to create a {@link Relationship} Object either when the detailed or the summarized
      * version of the relationship answer is given as input
      */
     @Test
     public void TestCreateRelationshipAnswer() {
         //detailed answer
-        File answer = new File(classLoader.getResource("RelationshipAnswer.json").getFile());
+        File answer = new File(classLoader.getResource("Relationship.json").getFile());
         //summary answer
-        File answer_item = new File(classLoader.getResource("RelationshipAnswerItem.json").getFile());
+        File answer_item = new File(classLoader.getResource("RelationshipItem.json").getFile());
         try {
             String answer_json = new Scanner(answer, "UTF-8").useDelimiter("\\A").next();
             String answer_item_json = new Scanner(answer_item, "UTF-8").useDelimiter("\\A").next();
-            assertTrue(WikirateCardFactory.createRelationshipAnswer(answer_json) instanceof RelationshipAnswer);
-            assertTrue(WikirateCardFactory.createRelationshipAnswer(answer_item_json) instanceof RelationshipAnswer);
+            assertTrue(WikirateCardFactory.createRelationship(answer_json) instanceof Relationship);
+            assertTrue(WikirateCardFactory.createRelationship(answer_item_json) instanceof Relationship);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IncompatibleCardTypeException e) {

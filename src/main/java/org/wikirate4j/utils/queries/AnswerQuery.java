@@ -1,6 +1,7 @@
 package org.wikirate4j.utils.queries;
 
-import org.apache.http.message.BasicNameValuePair;
+
+import org.apache.hc.core5.http.message.BasicNameValuePair;
 import org.wikirate4j.utils.*;
 
 /**
@@ -14,13 +15,13 @@ public class AnswerQuery extends Query<AnswerQuery> {
         super();
     }
 
-    public AnswerQuery company_name(String name) {
-        super.filters.add(new BasicNameValuePair("filter[company_name]", name));
+    public AnswerQuery company(String name) {
+        super.filters.add(new BasicNameValuePair("filter[company]", name));
         return this;
     }
 
-    public AnswerQuery company_id(long id) {
-        super.filters.add(new BasicNameValuePair("filter[company_id][]", String.valueOf(id)));
+    public AnswerQuery company(long id) {
+        super.filters.add(new BasicNameValuePair("filter[company][]", "~"+String.valueOf(id)));
         return this;
     }
 
@@ -39,13 +40,21 @@ public class AnswerQuery extends Query<AnswerQuery> {
         return this;
     }
 
-    public AnswerQuery metric_name(String name) {
-        super.filters.add(new BasicNameValuePair("filter[metric_name]", name));
+    public AnswerQuery metric_keyword(String name) {
+        super.filters.add(new BasicNameValuePair("filter[metric_keyword]", name));
         return this;
     }
 
-    public AnswerQuery metric_id(long id) {
-        super.filters.add(new BasicNameValuePair("filter[metric_id][]", String.valueOf(id)));
+    public AnswerQuery metric(long id) {
+        super.filters.add(new BasicNameValuePair("filter[metric][]", "~"+String.valueOf(id)));
+        return this;
+    }
+
+    public AnswerQuery benchmark(boolean isBenchmark){
+        if (isBenchmark)
+            super.filters.add(new BasicNameValuePair("filter[benchmark]", "1"));
+        else
+            super.filters.add(new BasicNameValuePair("filter[benchmark]", "0"));
         return this;
     }
 
@@ -57,8 +66,18 @@ public class AnswerQuery extends Query<AnswerQuery> {
         return this;
     }
 
-    public AnswerQuery topic(String topic) {
-        super.filters.add(new BasicNameValuePair("filter[wikirate_topic][]", topic));
+    public AnswerQuery topic(WikirateTopic topic) {
+        super.filters.add(new BasicNameValuePair("filter[topic][]", topic.value()));
+        return this;
+    }
+
+    public AnswerQuery topic_framework(TopicFramework topic_framework) {
+        super.filters.add(new BasicNameValuePair("filter[topic_framework][]", topic_framework.value()));
+        return this;
+    }
+
+    public AnswerQuery topic_framework(String topic_framework) {
+        super.filters.add(new BasicNameValuePair("filter[topic_framework][]", topic_framework));
         return this;
     }
 
@@ -77,8 +96,8 @@ public class AnswerQuery extends Query<AnswerQuery> {
         return this;
     }
 
-    public AnswerQuery research_policy(ResearchPolicy research_policy) {
-        super.filters.add(new BasicNameValuePair("filter[research_policy]", research_policy.value()));
+    public AnswerQuery assessment_type(AssessmentType assessment_type) {
+        super.filters.add(new BasicNameValuePair("filter[assessment]", assessment_type.value()));
         return this;
     }
 
@@ -125,6 +144,11 @@ public class AnswerQuery extends Query<AnswerQuery> {
         return this;
     }
 
+    public AnswerQuery license(LicenseType license) {
+        super.filters.add(new BasicNameValuePair("filter[license][]", license.value()));
+        return this;
+    }
+
     public AnswerQuery status(AnswerStatus status) {
         super.filters.add(new BasicNameValuePair("filter[status]", String.valueOf(status.value())));
         return this;
@@ -141,7 +165,7 @@ public class AnswerQuery extends Query<AnswerQuery> {
     }
 
     public AnswerQuery source(String source) {
-        super.filters.add(new BasicNameValuePair("filter[source]", String.valueOf(source)));
+        super.filters.add(new BasicNameValuePair("filter[source][]", String.valueOf(source)));
         return this;
     }
 

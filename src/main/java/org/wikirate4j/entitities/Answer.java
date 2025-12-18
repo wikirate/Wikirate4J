@@ -69,7 +69,7 @@ public interface Answer extends Card {
      *
      * @return a list of sources
      */
-    List<Source> getSources();
+    List<SourceReference> getSources();
 
     /**
      * Users are able to flag an answer to request a check in case the have doubts that the answer is correct.

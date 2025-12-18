@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html","k":"18"},{"l":"org.wikirate4j"},{"l":"org.wikirate4j.entitities"},{"l":"org.wikirate4j.exceptions"},{"l":"org.wikirate4j.tests"},{"l":"org.wikirate4j.utils"},{"l":"org.wikirate4j.utils.queries"}];updateSearchResults();

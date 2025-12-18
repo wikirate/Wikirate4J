@@ -23,7 +23,7 @@ public class AnswerImpl extends CardImpl implements Answer {
 
     String recordUrl;
 
-    List<Source> sources;
+    List<SourceReference> sources;
 
     String answersURL;
 
@@ -91,7 +91,7 @@ public class AnswerImpl extends CardImpl implements Answer {
     }
 
     @Override
-    public List<Source> getSources() {
+    public List<SourceReference> getSources() {
         return sources;
     }
 
@@ -114,7 +114,7 @@ public class AnswerImpl extends CardImpl implements Answer {
         private Integer year;
         private String value;
         private String recordUrl;
-        private List<Source> sources;
+        private List<SourceReference> sources;
         private String answersURL;
 
         private String comments;
@@ -155,7 +155,7 @@ public class AnswerImpl extends CardImpl implements Answer {
             return this;
         }
 
-        public Builder sources(List<Source> sources) {
+        public Builder sources(List<SourceReference> sources) {
             this.sources = sources;
             return this;
         }

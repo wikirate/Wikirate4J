@@ -1,7 +1,9 @@
 {
-  "id": 14469348,
-  "name": "Net Zero Tracker Companies",
-  "type": "Data Set",
-  "url": "https://wikirate.org/Net_Zero_Tracker_Companies.json",
-  "content": ""
+  "id": 18088185,
+  "name": "Australian corporate greenhouse gas (GHG) emissions and energy data",
+  "type": "Dataset",
+  "url": "https://wikirate.org/Australian_corporate_greenhouse_gas_GHG_emissions_and_energy_data.json?view=atom",
+  "content": "",
+  "requested_at": "2025-12-18 21:07:22 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

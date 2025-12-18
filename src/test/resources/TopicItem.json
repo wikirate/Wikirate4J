@@ -1,10 +1,24 @@
 {
-  "id": 14427,
-  "name": "GRI",
+  "id": 1172,
+  "name": "Wikirate ESG Topics+Human Rights",
   "type": "Topic",
-  "url": "https://wikirate.org/GRI.json",
-  "content": "",
-  "bookmarkers": 7,
-  "metrics": 528,
-  "datasets": 65
+  "url": "https://wikirate.org/Wikirate%20ESG%20Topics+Human%20Rights.json?view=atom",
+  "title": "Human Rights",
+  "framework": "Wikirate ESG Topics",
+  "family": "Social",
+  "parent": "Wikirate ESG Topics+Social",
+  "children": [
+    "Wikirate ESG Topics+Human Rights Due Diligence",
+    "Wikirate ESG Topics+Grievance Mechanisms",
+    "Wikirate ESG Topics+Child Labor",
+    "Wikirate ESG Topics+Modern Slavery",
+    "Wikirate ESG Topics+Forced Labor",
+    "Wikirate ESG Topics+Indigenous Peoples Rights",
+    "Wikirate ESG Topics+Conflict-Affected Areas",
+    "Wikirate ESG Topics+Migrant Worker Protections"
+  ],
+  "metrics": "https://wikirate.org/Wikirate_ESG_Topics+Human_Rights+Metric",
+  "datasets": "https://wikirate.org/Wikirate_ESG_Topics+Human_Rights+Dataset",
+  "requested_at": "2025-12-18 21:15:30 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }

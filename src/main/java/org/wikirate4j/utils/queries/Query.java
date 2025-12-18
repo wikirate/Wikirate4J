@@ -1,6 +1,6 @@
 package org.wikirate4j.utils.queries;
 
-import org.apache.http.NameValuePair;
+import org.apache.hc.core5.http.NameValuePair;
 import org.wikirate4j.utils.SortBy;
 
 import java.util.ArrayList;

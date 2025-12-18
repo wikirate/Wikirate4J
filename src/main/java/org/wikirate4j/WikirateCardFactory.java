@@ -5,6 +5,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.wikirate4j.entitities.*;
 import org.wikirate4j.exceptions.IncompatibleCardTypeException;
+import org.wikirate4j.utils.WikirateTopic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,10 +36,16 @@ public class WikirateCardFactory {
                     .name(json.getString("name"))
                     .headquarters(getContentOfArray("headquarters", json, String.class) != null ? getContentOfArray("headquarters", json, String.class).get(0) : null)
                     .aliases(getContentOfArray("alias", json, String.class))
-                    .open_corporates(getContentOf("open_corporates", json, String.class))
+                    .open_corporates_id(getContentOf("open_corporates_id", json, String.class))
                     .wikipedia(getContentOf("wikipedia", json, String.class))
-                    .cik(getContentOf("sec_cik", json, String.class))
-                    .os_id(getContentOf("oar_id", json, String.class))
+                    .sec_cik(getContentOf("sec_central_index_key", json, String.class))
+                    .os_id(getContentOf("open_supply_id", json, String.class))
+                    .lei(getContentOf("legal_entity_identifier", json, String.class))
+                    .isin(getContentOfArray("international_securities_identification_number", json, String.class))
+                    .australian_business_number(getContentOf("australian_business_number", json, String.class))
+                    .australian_company_number(getContentOf("australian_company_number", json, String.class))
+                    .uk_company_number(getContentOf("uk_company_number", json, String.class))
+                    .wikidata_id(getContentOf("wikidata_id", json, String.class))
                     .url(getContentOf("url", json, String.class))
                     .updated_at(getContentOf("updated_at", json, String.class))
                     .created_at(getContentOf("created_at", json, String.class))
@@ -53,10 +60,16 @@ public class WikirateCardFactory {
                     .name(json.getString("name"))
                     .headquarters(getContentOf("headquarters", json, String.class))
                     .aliases(getContentOfArray("alias", json, String.class))
-                    .open_corporates(getContentOf("open_corporates", json, String.class))
+                    .open_corporates_id(getContentOf("open_corporates_id", json, String.class))
                     .wikipedia(getContentOf("wikipedia", json, String.class))
-                    .cik(getContentOf("sec_cik", json, String.class))
-                    .os_id(getContentOf("oar_id", json, String.class))
+                    .sec_cik(getContentOf("sec_central_index_key", json, String.class))
+                    .os_id(getContentOf("open_supply_id", json, String.class))
+                    .lei(getContentOf("legal_entity_identifier", json, String.class))
+                    .isin(getContentOfArray("international_securities_identification_number", json, String.class))
+                    .australian_business_number(getContentOf("australian_business_number", json, String.class))
+                    .australian_company_number(getContentOf("australian_company_number", json, String.class))
+                    .uk_company_number(getContentOf("uk_company_number", json, String.class))
+                    .wikidata_id(getContentOf("wikidata_id", json, String.class))
                     .url(getContentOf("url", json, String.class))
                     .updated_at(getContentOf("updated_at", json, String.class))
                     .created_at(getContentOf("created_at", json, String.class))
@@ -93,8 +106,9 @@ public class WikirateCardFactory {
                 .value_type(getContentOf("value_type", json, String.class))
                 .value_options(getContentOfArray("value_options", json, String.class))
                 .report_type(getContentOf("report_type", json, String.class))
-                .research_policy(getContentOf("research_policy", json, String.class))
-                .topics(getContentOfArray("topics", json, String.class))
+                .assessment_type(getContentOf("assessment", json, String.class))
+                .topics(getContentOfArray("topics", json, WikirateTopic.class))
+                .topic_frameworks(getContentOfArray("topic_frameworks", json, String.class))
                 .formula(getContentOf("formula", json, String.class))
                 .variables(getContentOfArray("variables", json, String.class))
                 .calculations(getContentOfArray("calculations", json, String.class))
@@ -167,15 +181,19 @@ public class WikirateCardFactory {
         return new TopicImpl.Builder()
                 .id(getContentOf("id", json, Long.class))
                 .name(getContentOf("name", json, String.class))
+                .title(getContentOf("title", json, String.class))
+                .framework(getContentOf("framework", json, String.class))
+                .family(getContentOf("family", json, String.class))
+                .parent(getContentOf("parent", json, String.class))
+                .children(getContentOfArray("children", json, String.class))
                 .url(getContentOf("url", json, String.class))
                 .html_url(getContentOf("html_url", json, String.class))
                 .updated_at(getContentOf("updated_at", json, String.class))
                 .created_at(getContentOf("created_at", json, String.class))
                 .requested_at(getContentOf("requested_at", json, String.class))
                 .rawJson(json)
-                .bookmarkers(getContentOf("bookmarkers", json, Integer.class))
-                .metrics(getContentOf("metrics", json, Integer.class))
-                .datasets(getContentOf("datasets", json, Integer.class))
+                .metrics(getContentOf("metrics", json, String.class))
+                .datasets(getContentOf("datasets", json, String.class))
                 .build();
     }
 
@@ -189,7 +207,7 @@ public class WikirateCardFactory {
         JSONObject json = new JSONObject(rawJson);
         String card_type = getCardType(json);
 
-        if (!card_type.equals("Data Set"))
+        if (!card_type.equals("Dataset"))
             throw new IncompatibleCardTypeException("The requested Card is not a Data Set but a " + card_type);
 
         return new DatasetImpl.Builder()
@@ -283,7 +301,7 @@ public class WikirateCardFactory {
                 .recordUrl(getContentOf("record_url", json, String.class))
                 .metricDesigner(json.getString("metric").split("\\+")[0])
                 .metricName(json.getString("metric").split("\\+")[1])
-                .sources(getContentOfArray("sources", json, Source.class))
+                .sources(getContentOfArray("sources", json, SourceReference.class))
                 .id(getContentOf("id", json, Long.class))
                 .name(getContentOf("name", json, String.class))
                 .url(getContentOf("url", json, String.class))
@@ -296,19 +314,19 @@ public class WikirateCardFactory {
     }
 
     /**
-     * Creates a {@link RelationshipAnswer} given the raw json response from the api request
+     * Creates a {@link Relationship} given the raw json response from the api request
      * @param rawJson
      * @return
      * @throws IncompatibleCardTypeException in case a different Card type is returned
      */
-    public static RelationshipAnswer createRelationshipAnswer(String rawJson) throws IncompatibleCardTypeException {
+    public static Relationship createRelationship(String rawJson) throws IncompatibleCardTypeException {
         JSONObject json = new JSONObject(rawJson);
         String card_type = getCardType(json);
 
-        if (!card_type.equals("Relationship Answer"))
-            throw new IncompatibleCardTypeException("The requested Card is not a Relationship Answer but a " + card_type);
+        if (!card_type.equals("Relationship"))
+            throw new IncompatibleCardTypeException("The requested Card is not a Relationship but a " + card_type);
 
-        return new RelationshipAnswerImpl.Builder()
+        return new RelationshipImpl.Builder()
                 .id(json.getLong("id"))
                 .name(getContentOf("name", json, String.class))
                 .url(getContentOf("url", json, String.class))
@@ -433,17 +451,28 @@ public class WikirateCardFactory {
                 return (List<T>) json.getJSONArray(field).toList().stream().map(x -> Long.parseLong((String) x)).collect(Collectors.toList());
             else if (classType.equals(Double.class))
                 return (List<T>) json.getJSONArray(field).toList().stream().map(x -> Double.parseDouble((String) x)).collect(Collectors.toList());
-            else if (classType.equals(Source.class)) {
-                List<Source> sources = new ArrayList<>();
+            else if (classType.equals(SourceReference.class)) {
+                List<SourceReference> sources = new ArrayList<>();
                 for (int i = 0; i < json.getJSONArray(field).length(); i++) {
                     try {
-                        sources.add(createSource(json.getJSONArray(field).getJSONObject(i).toString()));
+                        if (json.getJSONArray(field).get(i) instanceof String){
+                            sources.add(new SourceReferenceImpl(json.getJSONArray(field).getString(i)));
+                        } else {
+                            sources.add(createSource(json.getJSONArray(field).getJSONObject(i).toString()));
+                        }
                     } catch (IncompatibleCardTypeException e) {
                         throw new RuntimeException(e);
                     }
                 }
                 return (List<T>) sources;
-            } else if (classType.equals(Answer.class)) {
+            } else if (classType.equals(WikirateTopic.class)){
+                List<WikirateTopic> topics = new ArrayList<>();
+                for (int i = 0; i < json.getJSONArray(field).length(); i++) {
+                    topics.add(WikirateTopic.getWikirateTopic(json.getJSONArray(field).get(i).toString()));
+                }
+                return (List<T>) topics;
+            }
+            else if (classType.equals(Answer.class)) {
                 List<Answer> answers = new ArrayList<>();
                 for (int i = 0; i < json.getJSONArray(field).length(); i++) {
                     try {
@@ -491,8 +520,14 @@ public class WikirateCardFactory {
                 }
             } else if (classType.equals(Long.class)) {
                 return json.getJSONObject(field).isNull("content") ? null : classType.cast(json.getJSONObject(field).getLong("content"));
-            } else
-                return json.getJSONObject(field).isNull("content") ? null : classType.cast(json.getJSONObject(field).get("content"));
+            } else {
+                if (json.getJSONObject(field).isNull("content"))
+                    return null;
+                else if(json.getJSONObject(field).get("content") instanceof JSONArray)
+                    return classType.cast(json.getJSONObject(field).getJSONArray("content").get(0));
+                else
+                    return classType.cast(json.getJSONObject(field).get("content"));
+            }
         if (classType.equals(Long.class)) {
             return classType.cast(json.getLong(field));
         }

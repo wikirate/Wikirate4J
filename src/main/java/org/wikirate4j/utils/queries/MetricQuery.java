@@ -1,9 +1,7 @@
 package org.wikirate4j.utils.queries;
 
-import org.apache.http.message.BasicNameValuePair;
-import org.wikirate4j.utils.MetricType;
-import org.wikirate4j.utils.ResearchPolicy;
-import org.wikirate4j.utils.ValueType;
+import org.apache.hc.core5.http.message.BasicNameValuePair;
+import org.wikirate4j.utils.*;
 
 /**
  * Class used to build a Metric Query
@@ -15,8 +13,21 @@ public class MetricQuery extends Query<MetricQuery> {
         super();
     }
 
-    public MetricQuery name(String name) {
-        super.filters.add(new BasicNameValuePair("filter[name]", name));
+    public MetricQuery metric_keyword(String name) {
+        super.filters.add(new BasicNameValuePair("filter[metric_keyword]", name));
+        return this;
+    }
+
+    public MetricQuery metric(long id) {
+        super.filters.add(new BasicNameValuePair("filter[metric][]", "~"+String.valueOf(id)));
+        return this;
+    }
+
+    public MetricQuery benchmark(boolean isBenchmark){
+        if (isBenchmark)
+            super.filters.add(new BasicNameValuePair("filter[benchmark]", "1"));
+        else
+            super.filters.add(new BasicNameValuePair("filter[benchmark]", "0"));
         return this;
     }
 
@@ -28,8 +39,18 @@ public class MetricQuery extends Query<MetricQuery> {
         return this;
     }
 
-    public MetricQuery topic(String topic) {
-        super.filters.add(new BasicNameValuePair("filter[wikirate_topic][]", topic));
+    public MetricQuery topic(WikirateTopic topic) {
+        super.filters.add(new BasicNameValuePair("filter[topic][]", topic.value()));
+        return this;
+    }
+
+    public MetricQuery topic_framework(TopicFramework topic_framework) {
+        super.filters.add(new BasicNameValuePair("filter[topic_framework][]", topic_framework.value()));
+        return this;
+    }
+
+    public MetricQuery topic_framework(String topic_framework) {
+        super.filters.add(new BasicNameValuePair("filter[topic_framework][]", topic_framework));
         return this;
     }
 
@@ -48,8 +69,13 @@ public class MetricQuery extends Query<MetricQuery> {
         return this;
     }
 
-    public MetricQuery research_policy(ResearchPolicy research_policy) {
-        super.filters.add(new BasicNameValuePair("filter[research_policy]", research_policy.value()));
+    public MetricQuery assessment_type(AssessmentType assessment_type) {
+        super.filters.add(new BasicNameValuePair("filter[assessment]", assessment_type.value()));
+        return this;
+    }
+
+    public MetricQuery license(LicenseType license) {
+        super.filters.add(new BasicNameValuePair("filter[license][]", license.value()));
         return this;
     }
 

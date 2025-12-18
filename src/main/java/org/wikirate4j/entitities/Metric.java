@@ -1,9 +1,6 @@
 package org.wikirate4j.entitities;
 
-import org.wikirate4j.utils.MetricType;
-import org.wikirate4j.utils.ReportType;
-import org.wikirate4j.utils.ResearchPolicy;
-import org.wikirate4j.utils.ValueType;
+import org.wikirate4j.utils.*;
 
 import java.util.List;
 
@@ -81,12 +78,12 @@ public interface Metric extends Card {
     ReportType getReportType();
 
     /**
-     * Research Policy applied on researched metrics, the research can either Community Assessed (anyone can research
-     * answers) or Designer Assessed (only the designer can research answers)
+     * Assessment type is applied on researched metrics, the research can either Community Assessed (anyone can research
+     * answers) or Steward Assessed (only stewards can research answers)
      *
-     * @return {@link ResearchPolicy}
+     * @return {@link AssessmentType}
      */
-    ResearchPolicy getResearchPolicy();
+    AssessmentType getAssessmentType();
 
     /**
      * In case of Number value type a unit might also be defined.
@@ -103,11 +100,19 @@ public interface Metric extends Card {
     String getRange();
 
     /**
-     * A list of topics related to the metric
+     * A list of topics under Wikirate ESG Topic framework related to the metric
      *
      * @return list of topic names
      */
-    List<String> getTopics();
+    List<WikirateTopic> getTopics();
+
+    /**
+     * A list of topics under other frameworks (e.g. GRI Standards, ESRS Standards etc) related to the metric
+     *
+     * @return list of topic names
+     */
+    List<String> getTopicFrameworks();
+
 
     /**
      * In case of a Formula metric type a formula is also defined in coffescript

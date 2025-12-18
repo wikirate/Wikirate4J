@@ -2,7 +2,7 @@
   "id": 4576573,
   "name": "Global Reporting Initiative+Third-party water withdrawals, GRI 303-3-a (formerly G4-EN8-a)+Laureen van Breen",
   "type": "Metric",
-  "url": "https://wikirate.org/Global_Reporting_Initiative+Third_party_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen.json",
+  "url": "https://wikirate.org/Global%20Reporting%20Initiative+Third-party%20water%20withdrawals,%20GRI%20303-3-a%20(formerly%20G4-EN8-a)+Laureen%20van%20Breen.json?view=atom",
   "designer": "Global Reporting Initiative",
   "title": "Third-party water withdrawals, GRI 303-3-a (formerly G4-EN8-a)",
   "question": "Did the company disclose how much water it used (in cubic metres) from municipal (public) sources?",
@@ -10,31 +10,32 @@
   "about": null,
   "methodology": null,
   "value_type": null,
-  "value_options": [
-
-  ],
+  "value_options": [],
   "report_type": null,
-  "research_policy": "Community Assessed",
+  "assessment": "Community Assessed",
   "unit": null,
   "range": null,
   "hybrid": "no",
   "topics": [
-    "Environmental Reporting",
-    "Transparency"
+    "Wikirate ESG Topics+Environment",
+    "Wikirate ESG Topics+Water",
+    "Wikirate ESG Topics+Water Management",
+    "Wikirate ESG Topics+Water Usage"
   ],
-  "scores": [
-
-  ],
+  "topic_frameworks": [],
+  "scores": [],
   "formula": "(function() {\n  if (isKnown(answer)) {\n    10;\n  } else {\n    0;\n  }\n\n}).call(this);\n",
   "rubric": null,
   "variables": "",
-  "answers": 2065,
+  "answer": 2216,
   "bookmarkers": 2,
-  "datasets": 0,
-  "companies": 867,
+  "datasets": 1,
+  "companies": 929,
   "calculations": [
     "https://wikirate.org/Oxfam_India+Environmental_Score.json",
     "https://wikirate.org/Oxfam_India+Environmental_Disclosure_Score.json"
   ],
-  "answers_url": "https://wikirate.org/Global_Reporting_Initiative+Third_party_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+Answer.json"
+  "answers_url": "https://wikirate.org/Global_Reporting_Initiative+Third_party_water_withdrawals_GRI_303_3_a_formerly_G4_EN8_a+Laureen_van_Breen+Answer.json",
+  "requested_at": "2025-12-18 21:14:06 UTC",
+  "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }
