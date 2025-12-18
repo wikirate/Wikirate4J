@@ -169,15 +169,19 @@ public class WikirateCardFactory {
         return new TopicImpl.Builder()
                 .id(getContentOf("id", json, Long.class))
                 .name(getContentOf("name", json, String.class))
+                .title(getContentOf("title", json, String.class))
+                .framework(getContentOf("framework", json, String.class))
+                .family(getContentOf("family", json, String.class))
+                .parent(getContentOf("parent", json, String.class))
+                .children(getContentOfArray("children", json, String.class))
                 .url(getContentOf("url", json, String.class))
                 .html_url(getContentOf("html_url", json, String.class))
                 .updated_at(getContentOf("updated_at", json, String.class))
                 .created_at(getContentOf("created_at", json, String.class))
                 .requested_at(getContentOf("requested_at", json, String.class))
                 .rawJson(json)
-                .bookmarkers(getContentOf("bookmarkers", json, Integer.class))
-                .metrics(getContentOf("metrics", json, Integer.class))
-                .datasets(getContentOf("datasets", json, Integer.class))
+                .metrics(getContentOf("metrics", json, String.class))
+                .datasets(getContentOf("datasets", json, String.class))
                 .build();
     }
 
