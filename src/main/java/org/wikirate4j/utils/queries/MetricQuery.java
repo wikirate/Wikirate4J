@@ -40,12 +40,17 @@ public class MetricQuery extends Query<MetricQuery> {
     }
 
     public MetricQuery topic(WikirateTopic topic) {
-        super.filters.add(new BasicNameValuePair("filter[wikirate_topic][]", topic.value()));
+        super.filters.add(new BasicNameValuePair("filter[topic][]", topic.value()));
         return this;
     }
 
     public MetricQuery topic_framework(TopicFramework topic_framework) {
-        super.filters.add(new BasicNameValuePair("filter[wikirate][]", topic_framework.value()));
+        super.filters.add(new BasicNameValuePair("filter[topic_framework][]", topic_framework.value()));
+        return this;
+    }
+
+    public MetricQuery topic_framework(String topic_framework) {
+        super.filters.add(new BasicNameValuePair("filter[topic_framework][]", topic_framework));
         return this;
     }
 

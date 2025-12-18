@@ -75,6 +75,11 @@ public class AnswerQuery extends Query<AnswerQuery> {
         return this;
     }
 
+    public AnswerQuery topic_framework(String topic_framework) {
+        super.filters.add(new BasicNameValuePair("filter[topic_framework][]", topic_framework));
+        return this;
+    }
+
     public AnswerQuery designer(String designer) {
         super.filters.add(new BasicNameValuePair("filter[designer][]", designer));
         return this;
