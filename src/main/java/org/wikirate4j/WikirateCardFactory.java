@@ -93,7 +93,7 @@ public class WikirateCardFactory {
                 .value_type(getContentOf("value_type", json, String.class))
                 .value_options(getContentOfArray("value_options", json, String.class))
                 .report_type(getContentOf("report_type", json, String.class))
-                .research_policy(getContentOf("research_policy", json, String.class))
+                .assessment_type(getContentOf("assessment", json, String.class))
                 .topics(getContentOfArray("topics", json, String.class))
                 .formula(getContentOf("formula", json, String.class))
                 .variables(getContentOfArray("variables", json, String.class))
@@ -283,7 +283,7 @@ public class WikirateCardFactory {
                 .recordUrl(getContentOf("record_url", json, String.class))
                 .metricDesigner(json.getString("metric").split("\\+")[0])
                 .metricName(json.getString("metric").split("\\+")[1])
-                .sources(getContentOfArray("sources", json, Source.class))
+                .sources(getContentOfArray("sources", json, SourceReference.class))
                 .id(getContentOf("id", json, Long.class))
                 .name(getContentOf("name", json, String.class))
                 .url(getContentOf("url", json, String.class))
@@ -433,11 +433,15 @@ public class WikirateCardFactory {
                 return (List<T>) json.getJSONArray(field).toList().stream().map(x -> Long.parseLong((String) x)).collect(Collectors.toList());
             else if (classType.equals(Double.class))
                 return (List<T>) json.getJSONArray(field).toList().stream().map(x -> Double.parseDouble((String) x)).collect(Collectors.toList());
-            else if (classType.equals(Source.class)) {
-                List<Source> sources = new ArrayList<>();
+            else if (classType.equals(SourceReference.class)) {
+                List<SourceReference> sources = new ArrayList<>();
                 for (int i = 0; i < json.getJSONArray(field).length(); i++) {
                     try {
-                        sources.add(createSource(json.getJSONArray(field).getJSONObject(i).toString()));
+                        if (json.getJSONArray(field).get(i) instanceof String){
+                            sources.add(new SourceReferenceImpl(json.getJSONArray(field).getString(i)));
+                        }else {
+                            sources.add(createSource(json.getJSONArray(field).getJSONObject(i).toString()));
+                        }
                     } catch (IncompatibleCardTypeException e) {
                         throw new RuntimeException(e);
                     }

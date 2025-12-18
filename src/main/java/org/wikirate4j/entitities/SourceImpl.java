@@ -87,6 +87,9 @@ public class SourceImpl extends CardImpl implements Source {
         return this.answers;
     }
 
+    @Override
+    public String asReference() { return this.name; }
+
 
     public static final class Builder extends CardImpl.Builder<Builder> {
         private String title;

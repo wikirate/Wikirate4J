@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author Vasiliki Gkatziaki
  */
-public interface Source extends Card {
+public interface Source extends Card, SourceReference{
 
     /**
      * Returns the title of the Source
