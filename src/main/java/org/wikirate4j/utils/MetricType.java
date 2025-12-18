@@ -6,10 +6,10 @@ package org.wikirate4j.utils;
 public enum MetricType {
 
     RESEARCHED("Researched"),
-    RELATIONSHIP("Relationship"),
-    INVERSE_RELATIONSHIP("Inverse Relationship"),
+    RELATION("Relation"),
+    INVERSE_RELATION("Inverse Relation"),
     FORMULA("Formula"),
-    WIKIRATING("WikiRating"),
+    RATING("Rating"),
     SCORE("Score"),
     DESCENDANT("Descendant"),
     UNKNOWN("");
