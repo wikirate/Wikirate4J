@@ -23,18 +23,28 @@ public class RelationshipAnswerQuery extends Query<RelationshipAnswerQuery> {
         this.metric_id = metric_id;
     }
 
-    public RelationshipAnswerQuery subject_company(String name) {
-        super.filters.add(new BasicNameValuePair("filter[name]", name));
+    public RelationshipAnswerQuery subject_company_name(String name) {
+        super.filters.add(new BasicNameValuePair("filter[subject_company_name]", name));
         return this;
     }
 
-    public RelationshipAnswerQuery company_category(CompanyCategory companyCategory) {
-        super.filters.add(new BasicNameValuePair("filter[company_category][]", companyCategory.value()));
+    public RelationshipAnswerQuery object_company_name(String name) {
+        super.filters.add(new BasicNameValuePair("filter[object_company_name]", name));
         return this;
     }
 
-    public RelationshipAnswerQuery company_group(String company_group) {
-        super.filters.add(new BasicNameValuePair("filter[company_group][]", company_group));
+    public RelationshipAnswerQuery subject_company_id(long subject_company_id) {
+        super.filters.add(new BasicNameValuePair("filter[subject_company_id]", String.valueOf(subject_company_id)));
+        return this;
+    }
+
+    public RelationshipAnswerQuery object_company_id(long object_company_id) {
+        super.filters.add(new BasicNameValuePair("filter[object_company_id]", String.valueOf(object_company_id)));
+        return this;
+    }
+
+    public RelationshipAnswerQuery value(String value) {
+        super.filters.add(new BasicNameValuePair("filter[value]", value));
         return this;
     }
 

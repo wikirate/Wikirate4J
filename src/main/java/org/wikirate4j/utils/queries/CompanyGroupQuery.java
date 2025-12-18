@@ -1,6 +1,8 @@
 package org.wikirate4j.utils.queries;
 
 import org.apache.http.message.BasicNameValuePair;
+import org.wikirate4j.utils.WikirateTopic;
+
 /**
  * Class used to build a Company Group Query
  * @author Vasiliki Gkatziaki
@@ -16,8 +18,8 @@ public class CompanyGroupQuery extends Query<CompanyGroupQuery> {
         return this;
     }
 
-    public CompanyGroupQuery topic(String topic) {
-        super.filters.add(new BasicNameValuePair("filter[wikirate_topic][]", topic));
+    public CompanyGroupQuery topic(WikirateTopic topic) {
+        super.filters.add(new BasicNameValuePair("filter[topic][]", topic.value()));
         return this;
     }
 

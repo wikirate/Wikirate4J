@@ -29,6 +29,11 @@ public class CompanyQuery extends Query<CompanyQuery> {
         return this;
     }
 
+    public CompanyQuery company_identifier(String company_identifier) {
+        super.filters.add(new BasicNameValuePair("filter[company_identifier][]", company_identifier));
+        return this;
+    }
+
     public CompanyQuery country(Country country) {
         super.filters.add(new BasicNameValuePair("filter[country][]", country.value()));
         return this;

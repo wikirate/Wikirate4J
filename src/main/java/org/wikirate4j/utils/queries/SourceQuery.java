@@ -23,11 +23,6 @@ public class SourceQuery extends Query<SourceQuery> {
         return this;
     }
 
-    public SourceQuery topic(String topic) {
-        super.filters.add(new BasicNameValuePair("filter[wikirate_topic][]", topic));
-        return this;
-    }
-
     public SourceQuery report_type(ReportType reportType) {
         super.filters.add(new BasicNameValuePair("filter[report_type]", reportType.value()));
         return this;
@@ -48,8 +43,13 @@ public class SourceQuery extends Query<SourceQuery> {
         return this;
     }
 
-    public SourceQuery company_name(String company_name) {
-        super.filters.add(new BasicNameValuePair("filter[company_name]", company_name));
+    public SourceQuery company(String company_name) {
+        super.filters.add(new BasicNameValuePair("filter[company]", company_name));
+        return this;
+    }
+
+    public SourceQuery company(long company_id) {
+        super.filters.add(new BasicNameValuePair("filter[company]", "~"+String.valueOf(company_id)));
         return this;
     }
 

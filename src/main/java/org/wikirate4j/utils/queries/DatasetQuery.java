@@ -1,6 +1,9 @@
 package org.wikirate4j.utils.queries;
 
 import org.apache.http.message.BasicNameValuePair;
+import org.wikirate4j.utils.LicenseType;
+import org.wikirate4j.utils.WikirateTopic;
+
 /**
  * Class used to build a Dataset Query
  * @author Vasiliki Gkatziaki
@@ -17,8 +20,13 @@ public class DatasetQuery extends Query<DatasetQuery> {
         return this;
     }
 
-    public DatasetQuery topic(String topic) {
-        super.filters.add(new BasicNameValuePair("filter[wikirate_topic][]", topic));
+    public DatasetQuery topic(WikirateTopic topic) {
+        super.filters.add(new BasicNameValuePair("filter[topic][]", topic.value()));
+        return this;
+    }
+
+    public DatasetQuery license(LicenseType license) {
+        super.filters.add(new BasicNameValuePair("filter[license][]", license.value()));
         return this;
     }
 
