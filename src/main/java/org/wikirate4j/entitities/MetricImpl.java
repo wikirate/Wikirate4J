@@ -1,10 +1,8 @@
 package org.wikirate4j.entitities;
 
 import org.json.JSONObject;
-import org.wikirate4j.utils.MetricType;
-import org.wikirate4j.utils.ReportType;
-import org.wikirate4j.utils.ResearchPolicy;
-import org.wikirate4j.utils.ValueType;
+import org.wikirate4j.utils.*;
+import org.wikirate4j.utils.AssessmentType;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -32,12 +30,15 @@ public class MetricImpl extends CardImpl implements Metric {
 
     ReportType reportType;
 
-    ResearchPolicy researchPolicy;
+    AssessmentType assessmentType;
 
     String unit;
 
     String range;
-    List<String> topics;
+
+    List<WikirateTopic> topics;
+
+    List<String> topic_frameworks;
 
     List<String> variables;
 
@@ -73,11 +74,12 @@ public class MetricImpl extends CardImpl implements Metric {
         this.unit = builder.unit;
         this.numberOfCompanies = builder.numberOfCompanies;
         this.topics = builder.topics;
+        this.topic_frameworks = builder.topicFrameworks;
         this.about = builder.about;
         this.formula = builder.formula;
         this.methodology = builder.methodology;
         this.metricDesigner = builder.metricDesigner;
-        this.researchPolicy = builder.researchPolicy;
+        this.assessmentType = builder.assessmentType;
         this.metricType = builder.metricType;
         this.question = builder.question;
     }
@@ -133,8 +135,8 @@ public class MetricImpl extends CardImpl implements Metric {
     }
 
     @Override
-    public ResearchPolicy getResearchPolicy() {
-        return this.researchPolicy;
+    public AssessmentType getAssessmentType() {
+        return this.assessmentType;
     }
 
     @Override
@@ -148,8 +150,13 @@ public class MetricImpl extends CardImpl implements Metric {
     }
 
     @Override
-    public List<String> getTopics() {
+    public List<WikirateTopic> getTopics() {
         return this.topics;
+    }
+
+    @Override
+    public List<String> getTopicFrameworks() {
+        return this.topic_frameworks;
     }
 
     @Override
@@ -203,10 +210,11 @@ public class MetricImpl extends CardImpl implements Metric {
         private ValueType valueType;
         private List<String> valueOptions;
         private ReportType reportType;
-        private ResearchPolicy researchPolicy;
+        private AssessmentType assessmentType;
         private String unit;
         private String range;
-        private List<String> topics;
+        private List<WikirateTopic> topics;
+        private List<String> topicFrameworks;
         private List<String> variables;
         private String formula;
         private Integer numberOfAnswers;
@@ -266,8 +274,8 @@ public class MetricImpl extends CardImpl implements Metric {
             return this;
         }
 
-        public Builder research_policy(String researchPolicy) {
-            this.researchPolicy = ResearchPolicy.getResearchPolicy(researchPolicy);
+        public Builder assessment_type(String assessmentType) {
+            this.assessmentType = AssessmentType.getAssessmentType(assessmentType);
             return this;
         }
 
@@ -282,7 +290,14 @@ public class MetricImpl extends CardImpl implements Metric {
         }
 
         public Builder topics(List<String> topics) {
-            this.topics = topics;
+            for (String topic: topics){
+                this.topics.add(WikirateTopic.getWikirateTopic(topic));
+            }
+            return this;
+        }
+
+        public Builder topic_frameworks(List<String> topicFrameworks) {
+            this.topicFrameworks = topicFrameworks;
             return this;
         }
 
